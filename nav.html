@@ -1,0 +1,64 @@
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<nav>
+  <a href="index.html" class="logo">SPILL<em>.</em></a>
+  <ul class="nav-links">
+    <li><a href="index.html" id="nav-home">Accueil</a></li>
+    <li><a href="monde.html" id="nav-monde">Monde</a></li>
+    <li><a href="gossip.html" id="nav-gossip">Gossip</a></li>
+    <li><a href="tech.html" id="nav-tech">Tech</a></li>
+    <li><a href="sport.html" id="nav-sport">Sport</a></li>
+    <li><a href="culture.html" id="nav-culture">Culture</a></li>
+    <li><a href="science.html" id="nav-science">Science</a></li>
+    <li><a href="wtf.html" id="nav-wtf">WTF</a></li>
+  </ul>
+  <div class="nav-right">
+    <form action="recherche.html" method="GET" style="display:flex;align-items:center">
+    <input class="nav-search" type="search" name="q" placeholder="🔍 Rechercher..." 
+           onkeypress="if(event.key==='Enter'){this.form.submit()}">
+  </form>
+    <a href="newsletter.html" class="nav-btn" style="text-decoration:none">S'inscrire</a>
+  </div>
+</nav>
+<div class="ticker-wrap">
+  <div class="ticker-label"><div class="tdot"></div>BREAKING</div>
+  <div class="ticker-track">
+    <div class="ticker-inner">
+      <span>Guerre Moyen-Orient : deux avions US abattus par l'Iran — un pilote secouru</span>
+      <span>Rima Hassan placée en garde à vue pour apologie du terrorisme</span>
+      <span>Artemis II : premiers soucis techniques dans l'espace</span>
+      <span>Trump attaque Macron personnellement depuis la Maison-Blanche</span>
+      <span>Flambée du carburant : prêt flash Bpifrance pour les TPE/PME</span>
+      <span>Marathon de Paris le 12 avril : 60 000 coureurs</span>
+      <span>Coupe du Monde 2026 — J-68</span>
+      <span>IKEA Suède : un homme vivait caché dans le magasin depuis 3 ans</span>
+      <span>Guerre Moyen-Orient : deux avions US abattus par l'Iran — un pilote secouru</span>
+      <span>Rima Hassan placée en garde à vue pour apologie du terrorisme</span>
+      <span>Artemis II : premiers soucis techniques dans l'espace</span>
+      <span>Trump attaque Macron personnellement depuis la Maison-Blanche</span>
+      <span>Flambée du carburant : prêt flash Bpifrance pour les TPE/PME</span>
+      <span>Marathon de Paris le 12 avril : 60 000 coureurs</span>
+      <span>Coupe du Monde 2026 — J-68</span>
+      <span>IKEA Suède : un homme vivait caché dans le magasin depuis 3 ans</span>
+    </div>
+  </div>
+</div>
+<div class="cats-bar">
+  <a href="index.html"><button class="cat-btn" id="catbtn-home">🌐 Tout</button></a>
+  <a href="monde.html"><button class="cat-btn" id="catbtn-monde">🌍 Monde</button></a>
+  <a href="gossip.html"><button class="cat-btn" id="catbtn-gossip">🎤 Gossip</button></a>
+  <a href="tech.html"><button class="cat-btn" id="catbtn-tech">💻 Tech</button></a>
+  <a href="sport.html"><button class="cat-btn" id="catbtn-sport">⚽ Sport</button></a>
+  <a href="culture.html"><button class="cat-btn" id="catbtn-culture">🎬 Culture</button></a>
+  <a href="science.html"><button class="cat-btn" id="catbtn-science">🧬 Science</button></a>
+  <a href="wtf.html"><button class="cat-btn" id="catbtn-wtf">🤯 WTF</button></a>
+</div>
+<div class="datebar">
+  <span><strong id="dateStr">Samedi 5 avril 2026</strong> — L'actu de partout, sur tout</span>
+  <span>Mis à jour il y a 4 minutes</span>
+</div>
+<script>
+const d=new Date();
+const el=document.getElementById('dateStr');
+if(el) el.textContent=d.toLocaleDateString('fr-FR',{weekday:'long',year:'numeric',month:'long',day:'numeric'}).replace(/^\w/,x=>x.toUpperCase());
+</script>

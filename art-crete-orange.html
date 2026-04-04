@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>La Crète sous un ciel orange : quand le Sahara envahit l'Europe | SPILL</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<nav>
+  <a href="index.html" class="logo">SPILL<em>.</em></a>
+  <ul class="nav-links">
+    <li><a href="index.html" id="nav-home">Accueil</a></li>
+    <li><a href="monde.html" id="nav-monde">Monde</a></li>
+    <li><a href="gossip.html" id="nav-gossip">Gossip</a></li>
+    <li><a href="tech.html" id="nav-tech">Tech</a></li>
+    <li><a href="sport.html" id="nav-sport">Sport</a></li>
+    <li><a href="culture.html" id="nav-culture">Culture</a></li>
+    <li><a href="science.html" id="nav-science">Science</a></li>
+    <li><a href="wtf.html" id="nav-wtf">WTF</a></li>
+  </ul>
+  <div class="nav-right">
+    <form action="recherche.html" method="GET" style="display:flex;align-items:center">
+    <input class="nav-search" type="search" name="q" placeholder="🔍 Rechercher..." 
+           onkeypress="if(event.key==='Enter'){this.form.submit()}">
+  </form>
+    <a href="newsletter.html" class="nav-btn" style="text-decoration:none">S'inscrire</a>
+  </div>
+</nav>
+<div class="ticker-wrap">
+  <div class="ticker-label"><div class="tdot"></div>BREAKING</div>
+  <div class="ticker-track">
+    <div class="ticker-inner">
+      <span>Guerre Moyen-Orient : deux avions US abattus par l'Iran — un pilote secouru</span>
+      <span>Rima Hassan placée en garde à vue pour apologie du terrorisme</span>
+      <span>Artemis II : premiers soucis techniques dans l'espace</span>
+      <span>Trump attaque Macron personnellement depuis la Maison-Blanche</span>
+      <span>Flambée du carburant : prêt flash Bpifrance pour les TPE/PME</span>
+      <span>Marathon de Paris le 12 avril : 60 000 coureurs</span>
+      <span>Coupe du Monde 2026 — J-68</span>
+      <span>IKEA Suède : un homme vivait caché dans le magasin depuis 3 ans</span>
+      <span>Guerre Moyen-Orient : deux avions US abattus par l'Iran — un pilote secouru</span>
+      <span>Rima Hassan placée en garde à vue pour apologie du terrorisme</span>
+      <span>Artemis II : premiers soucis techniques dans l'espace</span>
+      <span>Trump attaque Macron personnellement depuis la Maison-Blanche</span>
+      <span>Flambée du carburant : prêt flash Bpifrance pour les TPE/PME</span>
+      <span>Marathon de Paris le 12 avril : 60 000 coureurs</span>
+      <span>Coupe du Monde 2026 — J-68</span>
+      <span>IKEA Suède : un homme vivait caché dans le magasin depuis 3 ans</span>
+    </div>
+  </div>
+</div>
+<div class="cats-bar">
+  <a href="index.html"><button class="cat-btn" id="catbtn-home">🌐 Tout</button></a>
+  <a href="monde.html"><button class="cat-btn" id="catbtn-monde">🌍 Monde</button></a>
+  <a href="gossip.html"><button class="cat-btn" id="catbtn-gossip">🎤 Gossip</button></a>
+  <a href="tech.html"><button class="cat-btn" id="catbtn-tech">💻 Tech</button></a>
+  <a href="sport.html"><button class="cat-btn" id="catbtn-sport">⚽ Sport</button></a>
+  <a href="culture.html"><button class="cat-btn" id="catbtn-culture">🎬 Culture</button></a>
+  <a href="science.html"><button class="cat-btn" id="catbtn-science">🧬 Science</button></a>
+  <a href="wtf.html"><button class="cat-btn" id="catbtn-wtf">🤯 WTF</button></a>
+</div>
+<div class="datebar">
+  <span><strong id="dateStr">Samedi 5 avril 2026</strong> — L'actu de partout, sur tout</span>
+  <span>Mis à jour il y a 4 minutes</span>
+</div>
+<script>
+const d=new Date();
+const el=document.getElementById('dateStr');
+if(el) el.textContent=d.toLocaleDateString('fr-FR',{weekday:'long',year:'numeric',month:'long',day:'numeric'}).replace(/^\w/,x=>x.toUpperCase());
+</script>
+
+<script>document.addEventListener('DOMContentLoaded',function(){var el=document.getElementById('nav-science');if(el)el.classList.add('active');});</script>
+<div class="art-wrap">
+  <a href="science.html" class="art-back">← Science</a>
+  <div class="art-cat">🧬 Science</div>
+  <h1 class="art-title">La Crète sous un ciel orange : quand le Sahara envahit l'Europe</h1>
+  <p class="art-sub">Des vents violents ont transporté des millions de tonnes de sable du Sahara jusqu'en Crète, teintant le ciel en rouge et orange. Un phénomène de plus en plus fréquent lié au changement climatique.</p>
+  <div class="art-meta">
+    <span class="art-author">SPILL · Rédaction</span>
+    <span>Il y a 2h</span>
+    <span>Source : France 24 / Reuters</span>
+    <span>👁 312k vues</span>
+  </div>
+  <div class="art-hero-img" style="background:linear-gradient(160deg,#3a2800,#6a4000,#8a5000);overflow:hidden">
+    <img src="https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=1200&q=80" alt="La Crète sous un ciel orange : quand le Sahara envahit l'Eur" loading="lazy"
+    style="width:100%;height:100%;object-fit:cover;display:block"
+    onerror="this.src='https://picsum.photos/seed/crete-ciel-orange-sahara/1200/630';this.onerror=null">
+  </div>
+  <div class="art-body"><p>Les habitants de la Crète ont vécu une journée surréaliste début avril 2026 : le ciel est devenu orange, le soleil voilé a créé une atmosphère quasi martienne, et une fine couche de sable rougeâtre a recouvert voitures, terrasses et plages. Bienvenue dans les épisodes de sable saharien, de plus en plus fréquents en Méditerranée.</p>
+<h2>Comment ça marche</h2>
+<p>Des vents de haute altitude ont soulevé des quantités massives de sable et de poussière au-dessus du Sahara et les ont transportées sur des milliers de kilomètres jusqu'à la Méditerranée orientale. Ce type d'épisode se produit chaque année, mais leur fréquence et leur intensité augmentent avec le changement climatique qui provoque plus de sécheresses et de désertification en Afrique du Nord.</p>
+<h2>Un impact sur la santé</h2>
+<p>Les autorités sanitaires crétoise ont conseillé aux personnes asthmatiques et aux enfants de rester chez elles. Les particules fines transportées par le sable peuvent provoquer des irritations respiratoires sévères. Les voitures blanches se retrouvent recouvertes d'une couche ocre caractéristique.</p>
+<h2>Un phénomène méditerranéen en expansion</h2>
+<p>La France, l'Espagne, l'Italie et la Grèce subissent régulièrement ces épisodes. Marseille en a connu trois en 2025. Les climatologues prévoient que ces événements vont doubler en fréquence d'ici 2050.</p></div>
+  <div class="art-tags"><span class="tag">#Crète</span> <span class="tag">#Sahara</span> <span class="tag">#Sable</span> <span class="tag">#Climat</span> <span class="tag">#Insolite</span> <span class="tag">#Météo</span> <span class="tag">#Europe</span></div>
+</div>
+<footer>
+  <div class="foot-inner">
+    <div class="foot-logo">SPILL<em>L'actu de partout, sur tout · 2026</em></div>
+    <div class="foot-links">
+      <a href="a-propos.html">À propos</a><a href="contact.html">Contact</a><a href="mentions-legales.html">Mentions légales</a><a href="newsletter.html">Newsletter</a>
+    </div>
+    <div class="foot-copy">© SPILL 2026</div>
+  </div>
+</footer>
+
+</body></html>

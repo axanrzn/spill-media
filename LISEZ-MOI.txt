@@ -1,0 +1,24 @@
+╔═══════════════════════════════════════════╗
+║         OUVRIR SPILL DANS SAFARI          ║
+╚═══════════════════════════════════════════╝
+
+MÉTHODE 1 — SERVEUR LOCAL (recommandée) :
+─────────────────────────────────────────
+1. Double-clique sur "LANCER_SPILL.command"
+   (Si ça demande la permission : clic droit → Ouvrir)
+2. Ouvre Safari
+3. Va sur :  http://localhost:8080
+4. Le site s'affiche parfaitement avec toutes les images !
+
+MÉTHODE 2 — En ligne (meilleure) :
+────────────────────────────────────
+Glisse le dossier spill_site/ sur netlify.com/drop
+→ Ton site sera en ligne en 30 secondes, gratuit.
+→ Toutes les images chargeront parfaitement.
+
+POURQUOI LES IMAGES BUGUENT EN double-cliquant le HTML :
+─────────────────────────────────────────────────────────
+Safari bloque les images externes (Unsplash) quand le
+fichier est ouvert depuis le bureau (protocole file://).
+Ce n'est pas un bug du site — c'est une protection Safari.
+Avec le serveur local (localhost:8080), tout fonctionne.

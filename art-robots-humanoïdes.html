@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>2026 : l'année où les robots humanoïdes vont vraiment débarquer dans t | SPILL</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<nav>
+  <a href="index.html" class="logo">SPILL<em>.</em></a>
+  <ul class="nav-links">
+    <li><a href="index.html" id="nav-home">Accueil</a></li>
+    <li><a href="monde.html" id="nav-monde">Monde</a></li>
+    <li><a href="gossip.html" id="nav-gossip">Gossip</a></li>
+    <li><a href="tech.html" id="nav-tech">Tech</a></li>
+    <li><a href="sport.html" id="nav-sport">Sport</a></li>
+    <li><a href="culture.html" id="nav-culture">Culture</a></li>
+    <li><a href="science.html" id="nav-science">Science</a></li>
+    <li><a href="wtf.html" id="nav-wtf">WTF</a></li>
+  </ul>
+  <div class="nav-right">
+    <form action="recherche.html" method="GET" style="display:flex;align-items:center">
+    <input class="nav-search" type="search" name="q" placeholder="🔍 Rechercher..." 
+           onkeypress="if(event.key==='Enter'){this.form.submit()}">
+  </form>
+    <a href="newsletter.html" class="nav-btn" style="text-decoration:none">S'inscrire</a>
+  </div>
+</nav>
+<div class="ticker-wrap">
+  <div class="ticker-label"><div class="tdot"></div>BREAKING</div>
+  <div class="ticker-track">
+    <div class="ticker-inner">
+      <span>Guerre Moyen-Orient : deux avions US abattus par l'Iran — un pilote secouru</span>
+      <span>Rima Hassan placée en garde à vue pour apologie du terrorisme</span>
+      <span>Artemis II : premiers soucis techniques dans l'espace</span>
+      <span>Trump attaque Macron personnellement depuis la Maison-Blanche</span>
+      <span>Flambée du carburant : prêt flash Bpifrance pour les TPE/PME</span>
+      <span>Marathon de Paris le 12 avril : 60 000 coureurs</span>
+      <span>Coupe du Monde 2026 — J-68</span>
+      <span>IKEA Suède : un homme vivait caché dans le magasin depuis 3 ans</span>
+      <span>Guerre Moyen-Orient : deux avions US abattus par l'Iran — un pilote secouru</span>
+      <span>Rima Hassan placée en garde à vue pour apologie du terrorisme</span>
+      <span>Artemis II : premiers soucis techniques dans l'espace</span>
+      <span>Trump attaque Macron personnellement depuis la Maison-Blanche</span>
+      <span>Flambée du carburant : prêt flash Bpifrance pour les TPE/PME</span>
+      <span>Marathon de Paris le 12 avril : 60 000 coureurs</span>
+      <span>Coupe du Monde 2026 — J-68</span>
+      <span>IKEA Suède : un homme vivait caché dans le magasin depuis 3 ans</span>
+    </div>
+  </div>
+</div>
+<div class="cats-bar">
+  <a href="index.html"><button class="cat-btn" id="catbtn-home">🌐 Tout</button></a>
+  <a href="monde.html"><button class="cat-btn" id="catbtn-monde">🌍 Monde</button></a>
+  <a href="gossip.html"><button class="cat-btn" id="catbtn-gossip">🎤 Gossip</button></a>
+  <a href="tech.html"><button class="cat-btn" id="catbtn-tech">💻 Tech</button></a>
+  <a href="sport.html"><button class="cat-btn" id="catbtn-sport">⚽ Sport</button></a>
+  <a href="culture.html"><button class="cat-btn" id="catbtn-culture">🎬 Culture</button></a>
+  <a href="science.html"><button class="cat-btn" id="catbtn-science">🧬 Science</button></a>
+  <a href="wtf.html"><button class="cat-btn" id="catbtn-wtf">🤯 WTF</button></a>
+</div>
+<div class="datebar">
+  <span><strong id="dateStr">Samedi 5 avril 2026</strong> — L'actu de partout, sur tout</span>
+  <span>Mis à jour il y a 4 minutes</span>
+</div>
+<script>
+const d=new Date();
+const el=document.getElementById('dateStr');
+if(el) el.textContent=d.toLocaleDateString('fr-FR',{weekday:'long',year:'numeric',month:'long',day:'numeric'}).replace(/^\w/,x=>x.toUpperCase());
+</script>
+
+<script>document.addEventListener('DOMContentLoaded',function(){var el=document.getElementById('nav-tech');if(el)el.classList.add('active');});</script>
+<div class="art-wrap">
+  <a href="tech.html" class="art-back">← Tech</a>
+  <div class="art-cat">💻 Tech</div>
+  <h1 class="art-title">2026 : l'année où les robots humanoïdes vont vraiment débarquer dans ta vie</h1>
+  <p class="art-sub">Tesla, Boston Dynamics, des dizaines de startups chinoises... La course aux robots humanoïdes s'accélère à une vitesse terrifiante. Bank of America prévoit 30 millions d'unités d'ici 2030.</p>
+  <div class="art-meta">
+    <span class="art-author">SPILL · Rédaction</span>
+    <span>Il y a 3h</span>
+    <span>Source : MIT Technology Review / Bank of America</span>
+    <span>👁 234k vues</span>
+  </div>
+  <div class="art-hero-img" style="background:linear-gradient(160deg,#000010,#00001a,#000030);overflow:hidden">
+    <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80" alt="2026 : l'année où les robots humanoïdes vont vraiment débarq" loading="lazy"
+    style="width:100%;height:100%;object-fit:cover;display:block"
+    onerror="this.src='https://picsum.photos/seed/robots-humanoïdes-2026/1200/630';this.onerror=null">
+  </div>
+  <div class="art-body"><p>Tesla Optimus, le robot humanoïde d'Elon Musk, est désormais déployé dans plusieurs usines. Boston Dynamics vend son Atlas à des clients industriels. En Chine, des dizaines de startups sortent leurs propres modèles à un rythme effréné. 2026 est vraiment l'année où la science-fiction devient réalité.</p>
+<h2>Les chiffres donnent le vertige</h2>
+<p>Bank of America prévoit 30 millions de robots humanoïdes en circulation d'ici 2030, et plusieurs milliards au milieu du siècle. Pour comparaison, il y a aujourd'hui environ 3,5 millions de robots industriels dans le monde. L'accélération est sans précédent dans l'histoire de la robotique.</p>
+<h2>Qui va perdre son emploi en premier</h2>
+<p>Les secteurs les plus immédiatement menacés : la logistique d'entrepôt, le nettoyage industriel, les chaînes d'assemblage, et dans quelques années, certains métiers de service. Les économistes sont divisés sur la vitesse et l'ampleur des destructions d'emploi, mais pas sur leur réalité.</p>
+<h2>La course Chine-USA</h2>
+<p>La robotique humanoïde est devenue un enjeu géopolitique majeur. Qui maîtrise cette technologie contrôlera une part croissante de la production mondiale. Pékin a déclaré la robotique "secteur stratégique prioritaire" et injecte des milliards dans ses champions nationaux.</p></div>
+  <div class="art-tags"><span class="tag">#Robots</span> <span class="tag">#IA</span> <span class="tag">#Humanoïdes</span> <span class="tag">#Tech</span> <span class="tag">#Futur</span> <span class="tag">#Optimus</span> <span class="tag">#2026</span></div>
+</div>
+<footer>
+  <div class="foot-inner">
+    <div class="foot-logo">SPILL<em>L'actu de partout, sur tout · 2026</em></div>
+    <div class="foot-links">
+      <a href="a-propos.html">À propos</a><a href="contact.html">Contact</a><a href="mentions-legales.html">Mentions légales</a><a href="newsletter.html">Newsletter</a>
+    </div>
+    <div class="foot-copy">© SPILL 2026</div>
+  </div>
+</footer>
+
+</body></html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Newsletter SPILL — L'actu dans ta boîte</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+.nl-wrap{max-width:680px;margin:0 auto;padding:3rem 2rem 4rem}
+.badge{display:inline-block;background:var(--red);color:#fff;font-size:.65rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;border-radius:2px;margin-bottom:1rem}
+.nl-title{font-family:'Bebas Neue',sans-serif;font-size:3rem;letter-spacing:2px;color:var(--ink);margin-bottom:.5rem;line-height:1.05}
+.nl-sub{font-size:1.05rem;color:var(--muted);margin-bottom:2.5rem;padding-bottom:2rem;border-bottom:2px solid var(--red);line-height:1.6}
+.nl-desc{font-size:.96rem;line-height:1.8;color:rgba(13,13,13,.8);margin-bottom:2rem}
+.nl-form-box{background:var(--ink);border-radius:8px;padding:2.5rem;margin-bottom:2.5rem}
+.nl-form-box h2{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:#fff;letter-spacing:1px;margin-bottom:.5rem}
+.nl-form-box p{font-size:.85rem;color:rgba(255,255,255,.45);margin-bottom:1.5rem}
+.form-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.nl-input{flex:1;min-width:180px;background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.15);border-radius:4px;padding:12px 16px;color:#fff;font-size:.92rem;font-family:'DM Sans',sans-serif;transition:border-color .2s}
+.nl-input::placeholder{color:rgba(255,255,255,.3)}
+.nl-input:focus{outline:none;border-color:var(--red)}
+.nl-btn{background:var(--red);border:none;border-radius:4px;padding:12px 24px;color:#fff;font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;transition:background .2s;white-space:nowrap}
+.nl-btn:hover{background:var(--red2)}
+.nl-legal{font-size:.7rem;color:rgba(255,255,255,.28);line-height:1.6}
+.nl-legal a{color:rgba(255,255,255,.45)}
+.success-box{display:none;background:rgba(0,160,80,.1);border:1.5px solid rgba(0,160,80,.3);border-radius:6px;padding:1.5rem 2rem;margin-bottom:2rem;text-align:center}
+.success-box .icon{font-size:2.5rem;margin-bottom:.5rem}
+.success-box h3{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:1px;color:#006030;margin-bottom:.3rem}
+.success-box p{font-size:.9rem;color:#004020;line-height:1.6}
+.content-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.2rem 0 2rem}
+.content-card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:1.2rem}
+.content-card .icon{font-size:1.4rem;margin-bottom:.5rem}
+.content-card h3{font-weight:600;font-size:.9rem;color:var(--ink);margin-bottom:.3rem}
+.content-card p{font-size:.8rem;color:var(--muted)}
+.temoignage{border-left:3px solid var(--red);padding:.8rem 1.2rem;background:rgba(255,59,31,.04);border-radius:0 4px 4px 0;margin-bottom:.8rem;font-style:italic;font-size:.9rem;line-height:1.6;color:rgba(13,13,13,.75)}
+h2.section-h{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:3px;color:var(--ink);margin:2.5rem 0 .8rem;padding-bottom:.5rem;border-bottom:1px solid var(--line)}
+@media(max-width:600px){.form-row{flex-direction:column}.content-grid{grid-template-columns:1fr}.nl-title{font-size:2.2rem}}
+</style>
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<nav>
+  <a href="index.html" class="logo">SPILL<em>.</em></a>
+  <ul class="nav-links">
+    <li><a href="index.html" id="nav-home">Accueil</a></li>
+    <li><a href="monde.html" id="nav-monde">Monde</a></li>
+    <li><a href="gossip.html" id="nav-gossip">Gossip</a></li>
+    <li><a href="tech.html" id="nav-tech">Tech</a></li>
+    <li><a href="sport.html" id="nav-sport">Sport</a></li>
+    <li><a href="culture.html" id="nav-culture">Culture</a></li>
+    <li><a href="science.html" id="nav-science">Science</a></li>
+    <li><a href="wtf.html" id="nav-wtf">WTF</a></li>
+  </ul>
+  <div class="nav-right">
+    <form action="recherche.html" method="GET" style="display:flex;align-items:center">
+    <input class="nav-search" type="search" name="q" placeholder="🔍 Rechercher..." 
+           onkeypress="if(event.key==='Enter'){this.form.submit()}">
+  </form>
+    <a href="newsletter.html" class="nav-btn" style="text-decoration:none">S'inscrire</a>
+  </div>
+</nav>
+<div class="ticker-wrap">
+  <div class="ticker-label"><div class="tdot"></div>BREAKING</div>
+  <div class="ticker-track">
+    <div class="ticker-inner">
+      <span>Guerre Moyen-Orient : deux avions US abattus par l'Iran — un pilote secouru</span>
+      <span>Rima Hassan placée en garde à vue pour apologie du terrorisme</span>
+      <span>Artemis II : premiers soucis techniques dans l'espace</span>
+      <span>Trump attaque Macron personnellement depuis la Maison-Blanche</span>
+      <span>Flambée du carburant : prêt flash Bpifrance pour les TPE/PME</span>
+      <span>Marathon de Paris le 12 avril : 60 000 coureurs</span>
+      <span>Coupe du Monde 2026 — J-68</span>
+      <span>IKEA Suède : un homme vivait caché dans le magasin depuis 3 ans</span>
+      <span>Guerre Moyen-Orient : deux avions US abattus par l'Iran — un pilote secouru</span>
+      <span>Rima Hassan placée en garde à vue pour apologie du terrorisme</span>
+      <span>Artemis II : premiers soucis techniques dans l'espace</span>
+      <span>Trump attaque Macron personnellement depuis la Maison-Blanche</span>
+      <span>Flambée du carburant : prêt flash Bpifrance pour les TPE/PME</span>
+      <span>Marathon de Paris le 12 avril : 60 000 coureurs</span>
+      <span>Coupe du Monde 2026 — J-68</span>
+      <span>IKEA Suède : un homme vivait caché dans le magasin depuis 3 ans</span>
+    </div>
+  </div>
+</div>
+<div class="cats-bar">
+  <a href="index.html"><button class="cat-btn" id="catbtn-home">🌐 Tout</button></a>
+  <a href="monde.html"><button class="cat-btn" id="catbtn-monde">🌍 Monde</button></a>
+  <a href="gossip.html"><button class="cat-btn" id="catbtn-gossip">🎤 Gossip</button></a>
+  <a href="tech.html"><button class="cat-btn" id="catbtn-tech">💻 Tech</button></a>
+  <a href="sport.html"><button class="cat-btn" id="catbtn-sport">⚽ Sport</button></a>
+  <a href="culture.html"><button class="cat-btn" id="catbtn-culture">🎬 Culture</button></a>
+  <a href="science.html"><button class="cat-btn" id="catbtn-science">🧬 Science</button></a>
+  <a href="wtf.html"><button class="cat-btn" id="catbtn-wtf">🤯 WTF</button></a>
+</div>
+<div class="datebar">
+  <span><strong id="dateStr">Samedi 5 avril 2026</strong> — L'actu de partout, sur tout</span>
+  <span>Mis à jour il y a 4 minutes</span>
+</div>
+<script>
+const d=new Date();
+const el=document.getElementById('dateStr');
+if(el) el.textContent=d.toLocaleDateString('fr-FR',{weekday:'long',year:'numeric',month:'long',day:'numeric'}).replace(/^\w/,x=>x.toUpperCase());
+</script>
+
+<div class="datebar" style="padding:8px 2.5rem"><strong>SPILL</strong> — L'actu de partout, sur tout</div>
+
+<div class="nl-wrap">
+  <div class="badge">Newsletter</div>
+  <div class="nl-title">L'actu dans ta boîte.</div>
+  <div class="nl-sub">Chaque matin à 7h, le meilleur de SPILL. Gratuit. Sans pub. En 5 minutes.</div>
+  <div class="nl-desc">Les meilleures actu du moment, résumées et expliquées. Directement dans ta boîte mail.</div>
+
+  <!-- Succès -->
+  <div class="success-box" id="successBox">
+    <div class="icon">🎉</div>
+    <h3>Tu es abonné·e !</h3>
+    <p>Bienvenue dans la famille SPILL. Tu recevras ton premier email dès demain matin à 7h.<br>
+    Ajoute <strong>spill.media3@gmail.com</strong> à tes contacts pour ne rien rater.</p>
+  </div>
+
+  <!-- Formulaire FormSubmit -->
+  <div class="nl-form-box" id="formBox">
+    <h2>S'abonner gratuitement</h2>
+    <p>Un email le matin. Les 5 articles qui comptent. Rien de plus.</p>
+    <form action="https://formsubmit.co/spill.media3@gmail.com" method="POST" id="nlForm">
+      <input type="hidden" name="_subject" value="🔔 Nouvel abonné SPILL Newsletter">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+      <input type="hidden" name="_next" value="https://spill-media.netlify.app/newsletter.html?ok=1">
+      <input type="text" name="_honey" style="display:none">
+      <div class="form-row">
+        <input class="nl-input" type="text" name="prenom" placeholder="Ton prénom" required>
+        <input class="nl-input" type="email" name="email" placeholder="ton@email.fr" required>
+        <button type="submit" class="nl-btn">Je m'abonne →</button>
+      </div>
+      <div class="nl-legal">
+        En t'inscrivant, tu acceptes nos <a href="mentions-legales.html">mentions légales</a>.
+        Désabonnement en 1 clic à tout moment. Aucune pub, jamais.
+      </div>
+    </form>
+  </div>
+
+  <h2 class="section-h">Ce que tu vas recevoir</h2>
+  <div class="content-grid">
+    <div class="content-card"><div class="icon">🌍</div><h3>L'actu mondiale</h3><p>Ce qui s'est passé la nuit, résumé en 2 phrases</p></div>
+    <div class="content-card"><div class="icon">🔥</div><h3>Le sujet chaud</h3><p>L'article que tout le monde va lire aujourd'hui</p></div>
+    <div class="content-card"><div class="icon">🤯</div><h3>Le WTF du jour</h3><p>L'info insolite qui va lancer ta journée</p></div>
+    <div class="content-card"><div class="icon">🎤</div><h3>Le gossip</h3><p>Ce qu'on murmure dans les coulisses</p></div>
+  </div>
+
+  <h2 class="section-h">Ils en parlent</h2>
+  <div class="temoignage">« La seule newsletter d'actu que je lis vraiment tous les matins. » — Lucie, 24 ans, Lyon</div>
+  <div class="temoignage">« Enfin une newsletter qui parle à la fois de politique ET de gossip. » — Théo, 31 ans, Paris</div>
+  <div class="temoignage">« 5 minutes le matin et je suis calé pour toute la journée. » — Amina, 27 ans, Marseille</div>
+</div>
+
+<script>
+// Afficher succès si retour avec ?ok=1
+if(window.location.search.includes('ok=1')) {
+  document.getElementById('formBox').style.display = 'none';
+  document.getElementById('successBox').style.display = 'block';
+  window.scrollTo(0, 0);
+}
+</script>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-logo">SPILL<em>L'actu de partout, sur tout · 2026</em></div>
+    <div class="foot-links">
+      <a href="a-propos.html">À propos</a><a href="contact.html">Contact</a><a href="mentions-legales.html">Mentions légales</a><a href="newsletter.html">Newsletter</a>
+    </div>
+    <div class="foot-copy">© SPILL 2026</div>
+  </div>
+</footer>
+
+</body></html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Pakistan vs Taliban : la guerre oubliée aux frontières de l'Afghanista | SPILL</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<nav>
+  <a href="index.html" class="logo">SPILL<em>.</em></a>
+  <ul class="nav-links">
+    <li><a href="index.html" id="nav-home">Accueil</a></li>
+    <li><a href="monde.html" id="nav-monde">Monde</a></li>
+    <li><a href="gossip.html" id="nav-gossip">Gossip</a></li>
+    <li><a href="tech.html" id="nav-tech">Tech</a></li>
+    <li><a href="sport.html" id="nav-sport">Sport</a></li>
+    <li><a href="culture.html" id="nav-culture">Culture</a></li>
+    <li><a href="science.html" id="nav-science">Science</a></li>
+    <li><a href="wtf.html" id="nav-wtf">WTF</a></li>
+  </ul>
+  <div class="nav-right">
+    <form action="recherche.html" method="GET" style="display:flex;align-items:center">
+    <input class="nav-search" type="search" name="q" placeholder="🔍 Rechercher..." 
+           onkeypress="if(event.key==='Enter'){this.form.submit()}">
+  </form>
+    <a href="newsletter.html" class="nav-btn" style="text-decoration:none">S'inscrire</a>
+  </div>
+</nav>
+<div class="ticker-wrap">
+  <div class="ticker-label"><div class="tdot"></div>BREAKING</div>
+  <div class="ticker-track">
+    <div class="ticker-inner">
+      <span>Guerre Moyen-Orient : deux avions US abattus par l'Iran — un pilote secouru</span>
+      <span>Rima Hassan placée en garde à vue pour apologie du terrorisme</span>
+      <span>Artemis II : premiers soucis techniques dans l'espace</span>
+      <span>Trump attaque Macron personnellement depuis la Maison-Blanche</span>
+      <span>Flambée du carburant : prêt flash Bpifrance pour les TPE/PME</span>
+      <span>Marathon de Paris le 12 avril : 60 000 coureurs</span>
+      <span>Coupe du Monde 2026 — J-68</span>
+      <span>IKEA Suède : un homme vivait caché dans le magasin depuis 3 ans</span>
+      <span>Guerre Moyen-Orient : deux avions US abattus par l'Iran — un pilote secouru</span>
+      <span>Rima Hassan placée en garde à vue pour apologie du terrorisme</span>
+      <span>Artemis II : premiers soucis techniques dans l'espace</span>
+      <span>Trump attaque Macron personnellement depuis la Maison-Blanche</span>
+      <span>Flambée du carburant : prêt flash Bpifrance pour les TPE/PME</span>
+      <span>Marathon de Paris le 12 avril : 60 000 coureurs</span>
+      <span>Coupe du Monde 2026 — J-68</span>
+      <span>IKEA Suède : un homme vivait caché dans le magasin depuis 3 ans</span>
+    </div>
+  </div>
+</div>
+<div class="cats-bar">
+  <a href="index.html"><button class="cat-btn" id="catbtn-home">🌐 Tout</button></a>
+  <a href="monde.html"><button class="cat-btn" id="catbtn-monde">🌍 Monde</button></a>
+  <a href="gossip.html"><button class="cat-btn" id="catbtn-gossip">🎤 Gossip</button></a>
+  <a href="tech.html"><button class="cat-btn" id="catbtn-tech">💻 Tech</button></a>
+  <a href="sport.html"><button class="cat-btn" id="catbtn-sport">⚽ Sport</button></a>
+  <a href="culture.html"><button class="cat-btn" id="catbtn-culture">🎬 Culture</button></a>
+  <a href="science.html"><button class="cat-btn" id="catbtn-science">🧬 Science</button></a>
+  <a href="wtf.html"><button class="cat-btn" id="catbtn-wtf">🤯 WTF</button></a>
+</div>
+<div class="datebar">
+  <span><strong id="dateStr">Samedi 5 avril 2026</strong> — L'actu de partout, sur tout</span>
+  <span>Mis à jour il y a 4 minutes</span>
+</div>
+<script>
+const d=new Date();
+const el=document.getElementById('dateStr');
+if(el) el.textContent=d.toLocaleDateString('fr-FR',{weekday:'long',year:'numeric',month:'long',day:'numeric'}).replace(/^\w/,x=>x.toUpperCase());
+</script>
+
+<script>document.addEventListener('DOMContentLoaded',function(){var el=document.getElementById('nav-monde');if(el)el.classList.add('active');});</script>
+<div class="art-wrap">
+  <a href="monde.html" class="art-back">← Monde</a>
+  <div class="art-cat">🌍 Monde</div>
+  <h1 class="art-title">Pakistan vs Taliban : la guerre oubliée aux frontières de l'Afghanistan</h1>
+  <p class="art-sub">Depuis octobre 2025, le Pakistan et le régime taliban de Kaboul s'affrontent dans un conflit armé qui a déjà fait 70 morts. Une guerre quasi-secrète à la frontière afghano-pakistanaise.</p>
+  <div class="art-meta">
+    <span class="art-author">SPILL · Rédaction</span>
+    <span>Il y a 8h</span>
+    <span>Source : Al Jazeera / AFP</span>
+    <span>👁 67k vues</span>
+  </div>
+  <div class="art-hero-img" style="background:linear-gradient(160deg,#0a1500,#1a2a00,#102000);overflow:hidden">
+    <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=1200&q=80" alt="Pakistan vs Taliban : la guerre oubliée aux frontières de l'" loading="lazy"
+    style="width:100%;height:100%;object-fit:cover;display:block"
+    onerror="this.src='https://picsum.photos/seed/pakistan-afghanistan/1200/630';this.onerror=null">
+  </div>
+  <div class="art-body"><p>On pensait que les Taliban au pouvoir à Kaboul allaient stabiliser l'Afghanistan. C'est l'inverse qui s'est produit. Depuis mi-octobre 2025, le Pakistan mène des frappes aériennes sur le territoire afghan, accusant Kaboul d'abriter les Taliban pakistanais (TTP), responsables d'attentats meurtriers à Islamabad.</p>
+<h2>Pourquoi c'est grave</h2>
+<p>Le Pakistan et l'Afghanistan sont deux pays dotés d'armes nucléaires... enfin, le Pakistan l'est. Et une instabilité extrême dans la région est exactement ce qui favorise la prolifération de ces armes vers des acteurs non-étatiques. Les services de renseignement occidentaux surveillent la situation de très près.</p>
+<h2>Les civils pris en étau</h2>
+<p>Les frappes pakistanaises dans les provinces de Kandahar et Khost ont tué des dizaines de civils. En représailles, les TTP ont lancé plusieurs attentats-suicides à Peshawar et Islamabad. La population des zones frontalières vit dans la terreur.</p>
+<blockquote>« Nous n'avons nulle part où aller. Si on reste, on risque d'être tués par les bombes. Si on part, on n'a rien. » — Réfugié de Spin Boldak, octobre 2025</blockquote></div>
+  <div class="art-tags"><span class="tag">#Pakistan</span> <span class="tag">#Afghanistan</span> <span class="tag">#Taliban</span> <span class="tag">#Asie</span> <span class="tag">#Conflit</span> <span class="tag">#Monde</span> <span class="tag">#Oublié</span></div>
+</div>
+<footer>
+  <div class="foot-inner">
+    <div class="foot-logo">SPILL<em>L'actu de partout, sur tout · 2026</em></div>
+    <div class="foot-links">
+      <a href="a-propos.html">À propos</a><a href="contact.html">Contact</a><a href="mentions-legales.html">Mentions légales</a><a href="newsletter.html">Newsletter</a>
+    </div>
+    <div class="foot-copy">© SPILL 2026</div>
+  </div>
+</footer>
+
+</body></html>

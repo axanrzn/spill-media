@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="40%" stop-color="#0d1530"/>
+      <stop offset="100%" stop-color="#1a2050"/>
+    </linearGradient>
+    <linearGradient id="sky2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#000005" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#203080" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="jet-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a0a8b0"/>
+      <stop offset="50%" stop-color="#78828c"/>
+      <stop offset="100%" stop-color="#505860"/>
+    </linearGradient>
+    <linearGradient id="jet-dark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#606870"/>
+      <stop offset="100%" stop-color="#38404a"/>
+    </linearGradient>
+    <linearGradient id="wing-l" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8890a0"/>
+      <stop offset="100%" stop-color="#505860"/>
+    </linearGradient>
+    <linearGradient id="exhaust" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff6a00"/>
+      <stop offset="30%" stop-color="#ffaa00"/>
+      <stop offset="60%" stop-color="#ff4400" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ff2200" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="exhaust2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff8800"/>
+      <stop offset="40%" stop-color="#ffcc00"/>
+      <stop offset="100%" stop-color="#ff4400" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-s">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="star-glow" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Ciel nocturne -->
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <rect width="1200" height="630" fill="url(#sky2)"/>
+
+  <!-- Nuages sombres -->
+  <ellipse cx="200" cy="80" rx="180" ry="35" fill="#151a30" opacity="0.7"/>
+  <ellipse cx="350" cy="60" rx="120" ry="25" fill="#101525" opacity="0.5"/>
+  <ellipse cx="950" cy="100" rx="200" ry="40" fill="#151a30" opacity="0.6"/>
+  <ellipse cx="1100" cy="70" rx="140" ry="30" fill="#101525" opacity="0.5"/>
+  <ellipse cx="600" cy="550" rx="300" ry="60" fill="#0d1230" opacity="0.8"/>
+
+  <!-- Étoiles -->
+  <circle cx="50" cy="30" r="1.2" fill="#ffffff" opacity="0.9"/>
+  <circle cx="120" cy="55" r="0.8" fill="#ffffff" opacity="0.7"/>
+  <circle cx="300" cy="25" r="1" fill="#ffffff" opacity="0.8"/>
+  <circle cx="450" cy="45" r="0.6" fill="#ffffff" opacity="0.6"/>
+  <circle cx="700" cy="20" r="1.1" fill="#ffffff" opacity="0.9"/>
+  <circle cx="850" cy="40" r="0.7" fill="#ffffff" opacity="0.7"/>
+  <circle cx="1000" cy="15" r="1" fill="#ffffff" opacity="0.8"/>
+  <circle cx="1150" cy="50" r="0.9" fill="#ffffff" opacity="0.7"/>
+  <circle cx="80" cy="150" r="0.7" fill="#ffffff" opacity="0.5"/>
+  <circle cx="1050" cy="200" r="0.8" fill="#ffffff" opacity="0.6"/>
+  <circle cx="180" cy="200" r="0.6" fill="#aabbff" opacity="0.7"/>
+  <circle cx="930" cy="160" r="1" fill="#aabbff" opacity="0.6"/>
+
+  <!-- POST-COMBUSTION — Flammes des réacteurs (derrière l'avion) -->
+  <!-- Réacteur gauche -->
+  <ellipse cx="382" cy="328" rx="8" ry="8" fill="#ff9900" opacity="0.95" filter="url(#glow)"/>
+  <polygon points="382,320 322,315 280,318 322,333 382,336" fill="url(#exhaust)" opacity="0.9"/>
+  <polygon points="382,324 330,319 295,321 330,329 382,332" fill="url(#exhaust2)" opacity="0.7"/>
+  <!-- Réacteur droit -->
+  <ellipse cx="382" cy="302" rx="8" ry="8" fill="#ff9900" opacity="0.95" filter="url(#glow)"/>
+  <polygon points="382,294 322,290 280,292 322,306 382,310" fill="url(#exhaust)" opacity="0.9"/>
+  <polygon points="382,298 330,294 295,296 330,304 382,306" fill="url(#exhaust2)" opacity="0.7"/>
+
+  <!-- AVION - Vue légèrement de haut en 3/4 -->
+  <!-- G: gauche/droite dans le référentiel du dessin, avion vole vers la droite -->
+
+  <!-- Aile principale gauche (grande) -->
+  <polygon points="600,315 820,250 870,265 870,285 750,315 720,350 600,340"
+           fill="url(#wing-l)" stroke="#404850" stroke-width="1"/>
+  <!-- Aile principale droite -->
+  <polygon points="600,315 820,370 870,355 870,335 750,315 720,280 600,290"
+           fill="url(#jet-dark)" stroke="#404850" stroke-width="1"/>
+
+  <!-- Empennage horizontal gauche -->
+  <polygon points="440,300 530,270 560,278 540,298 440,308"
+           fill="url(#jet-dark)" stroke="#404850" stroke-width="0.8"/>
+  <!-- Empennage horizontal droit -->
+  <polygon points="440,330 530,358 560,350 540,332 440,322"
+           fill="url(#jet-dark)" stroke="#404850" stroke-width="0.8"/>
+
+  <!-- Dérives verticales (2 queues F-15) -->
+  <polygon points="470,305 510,268 525,272 510,308 470,312"
+           fill="#686e78" stroke="#404850" stroke-width="0.8"/>
+  <polygon points="470,325 510,362 525,358 510,322 470,318"
+           fill="#585e68" stroke="#404850" stroke-width="0.8"/>
+
+  <!-- Corps fuselage principal -->
+  <ellipse cx="680" cy="315" rx="230" ry="28" fill="url(#jet-body)" stroke="#505860" stroke-width="1.5"/>
+
+  <!-- Entrées d'air (intakes) -->
+  <ellipse cx="660" cy="296" rx="22" ry="9" fill="#2a3040" stroke="#404858" stroke-width="1"/>
+  <ellipse cx="660" cy="334" rx="22" ry="9" fill="#2a3040" stroke="#404858" stroke-width="1"/>
+
+  <!-- Nez de l'avion -->
+  <polygon points="890,315 870,300 875,315 870,330" fill="#909aa4" stroke="#606870" stroke-width="1"/>
+
+  <!-- Cockpit bulle -->
+  <ellipse cx="800" cy="308" rx="28" ry="10" fill="#1a2535" stroke="#5070a0" stroke-width="1.5" opacity="0.95"/>
+  <ellipse cx="800" cy="306" rx="22" ry="7" fill="#203050" opacity="0.7"/>
+  <!-- Reflet cockpit -->
+  <ellipse cx="798" cy="304" rx="12" ry="3.5" fill="#4070c0" opacity="0.4"/>
+
+  <!-- Pylônes et armement sous les ailes -->
+  <rect x="670" y="304" width="55" height="5" rx="2" fill="#404850"/>
+  <rect x="670" y="322" width="55" height="5" rx="2" fill="#404850"/>
+  <!-- Missiles -->
+  <rect x="695" y="300" width="30" height="3.5" rx="1.5" fill="#505860"/>
+  <polygon points="725,300 730,301.75 725,303.5" fill="#606870"/>
+  <rect x="695" y="325" width="30" height="3.5" rx="1.5" fill="#505860"/>
+  <polygon points="725,325 730,326.75 725,328.5" fill="#606870"/>
+
+  <!-- Bandes de camouflage -->
+  <path d="M580,298 Q640,295 700,300 Q740,302 760,308 Q740,312 700,316 Q640,319 580,316 Z"
+        fill="#6a7280" opacity="0.35"/>
+  <path d="M750,305 Q800,298 840,305 Q820,318 780,320 Q760,318 750,310 Z"
+        fill="#5a6270" opacity="0.3"/>
+
+  <!-- Numéro de série USAF -->
+  <text x="590" y="319" font-family="Arial Narrow, Arial" font-size="7" fill="#303840" letter-spacing="1">48 FW · 494 FS</text>
+
+  <!-- Reflets métalliques sur le fuselage -->
+  <ellipse cx="720" cy="310" rx="80" ry="8" fill="#ffffff" opacity="0.06"/>
+  <ellipse cx="820" cy="312" rx="40" ry="5" fill="#ffffff" opacity="0.08"/>
+
+  <!-- Ombre sous l'avion -->
+  <ellipse cx="660" cy="410" rx="200" ry="20" fill="#000000" opacity="0.25"/>
+
+  <!-- Lueur des réacteurs sur le fuselage -->
+  <ellipse cx="430" cy="315" rx="60" ry="20" fill="#ff6600" opacity="0.12" filter="url(#glow)"/>
+
+  <!-- Texte USAF discret -->
+  <text x="610" y="300" font-family="Arial Narrow, Arial" font-size="7.5" fill="#404850" letter-spacing="2" font-weight="bold">USAF</text>
+</svg>

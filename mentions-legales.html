@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Mentions légales — SPILL</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+.static-wrap{max-width:860px;margin:0 auto;padding:3rem 2rem 4rem}
+.static-title{font-family:'Bebas Neue',sans-serif;font-size:3rem;letter-spacing:2px;color:var(--ink);margin-bottom:.5rem}
+.static-sub{font-size:1.1rem;color:var(--muted);margin-bottom:2.5rem;padding-bottom:2rem;border-bottom:2px solid var(--red)}
+.static-body h2{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:1px;color:var(--ink);margin:2.5rem 0 .8rem}
+.static-body p{font-size:.96rem;line-height:1.8;color:rgba(13,13,13,.8);margin-bottom:1.2rem}
+.static-body a{color:var(--red);text-decoration:underline}
+.static-body ul{padding-left:1.5rem;margin-bottom:1.2rem}
+.static-body li{font-size:.96rem;line-height:1.8;color:rgba(13,13,13,.8);margin-bottom:.4rem}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:1.5rem}
+.contact-card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:1.5rem}
+.contact-card h3{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:2px;color:var(--ink);margin-bottom:.5rem}
+.contact-card p{font-size:.85rem;color:var(--muted);margin-bottom:.8rem}
+.contact-card a{display:inline-flex;align-items:center;gap:6px;background:var(--ink);color:#fff;padding:9px 18px;border-radius:3px;font-size:.78rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;text-decoration:none;transition:background .2s}
+.contact-card a:hover{background:var(--red)}
+.nl-form{background:var(--ink);border-radius:6px;padding:2.5rem;margin-top:2rem}
+.nl-form h2{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:#fff;letter-spacing:1px;margin-bottom:.5rem}
+.nl-form p{font-size:.9rem;color:rgba(255,255,255,.5);margin-bottom:1.5rem}
+.nl-form-row{display:flex;gap:10px;flex-wrap:wrap}
+.nl-form input{flex:1;min-width:200px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:3px;padding:12px 16px;color:#fff;font-size:.9rem;font-family:'DM Sans',sans-serif}
+.nl-form input::placeholder{color:rgba(255,255,255,.3)}
+.nl-form input:focus{outline:none;border-color:var(--red)}
+.nl-form button{background:var(--red);border:none;border-radius:3px;padding:12px 24px;color:#fff;font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:background .2s}
+.nl-form button:hover{background:var(--red2)}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:1.5rem}
+.team-card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:1.5rem;text-align:center}
+.team-avatar{width:64px;height:64px;border-radius:50%;background:var(--ink);display:flex;align-items:center;justify-content:center;margin:0 auto .8rem;font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--red);letter-spacing:2px}
+.team-name{font-weight:600;font-size:.9rem;color:var(--ink);margin-bottom:3px}
+.team-role{font-size:.75rem;color:var(--muted)}
+.badge{display:inline-block;background:var(--red);color:#fff;font-size:.65rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;border-radius:2px;margin-bottom:1rem}
+@media(max-width:700px){
+  .contact-grid,.team-grid{grid-template-columns:1fr}
+  .nl-form-row{flex-direction:column}
+  .static-title{font-size:2.2rem}
+}
+</style>
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<nav>
+  <a href="index.html" class="logo">SPILL<em>.</em></a>
+  <ul class="nav-links">
+    <li><a href="index.html" id="nav-home">Accueil</a></li>
+    <li><a href="monde.html" id="nav-monde">Monde</a></li>
+    <li><a href="gossip.html" id="nav-gossip">Gossip</a></li>
+    <li><a href="tech.html" id="nav-tech">Tech</a></li>
+    <li><a href="sport.html" id="nav-sport">Sport</a></li>
+    <li><a href="culture.html" id="nav-culture">Culture</a></li>
+    <li><a href="science.html" id="nav-science">Science</a></li>
+    <li><a href="wtf.html" id="nav-wtf">WTF</a></li>
+  </ul>
+  <div class="nav-right">
+    <form action="recherche.html" method="GET" style="display:flex;align-items:center">
+    <input class="nav-search" type="search" name="q" placeholder="🔍 Rechercher..." 
+           onkeypress="if(event.key==='Enter'){this.form.submit()}">
+  </form>
+    <a href="newsletter.html" class="nav-btn" style="text-decoration:none">S'inscrire</a>
+  </div>
+</nav>
+<div class="ticker-wrap">
+  <div class="ticker-label"><div class="tdot"></div>BREAKING</div>
+  <div class="ticker-track">
+    <div class="ticker-inner">
+      <span>Guerre Moyen-Orient : deux avions US abattus par l'Iran — un pilote secouru</span>
+      <span>Rima Hassan placée en garde à vue pour apologie du terrorisme</span>
+      <span>Artemis II : premiers soucis techniques dans l'espace</span>
+      <span>Trump attaque Macron personnellement depuis la Maison-Blanche</span>
+      <span>Flambée du carburant : prêt flash Bpifrance pour les TPE/PME</span>
+      <span>Marathon de Paris le 12 avril : 60 000 coureurs</span>
+      <span>Coupe du Monde 2026 — J-68</span>
+      <span>IKEA Suède : un homme vivait caché dans le magasin depuis 3 ans</span>
+      <span>Guerre Moyen-Orient : deux avions US abattus par l'Iran — un pilote secouru</span>
+      <span>Rima Hassan placée en garde à vue pour apologie du terrorisme</span>
+      <span>Artemis II : premiers soucis techniques dans l'espace</span>
+      <span>Trump attaque Macron personnellement depuis la Maison-Blanche</span>
+      <span>Flambée du carburant : prêt flash Bpifrance pour les TPE/PME</span>
+      <span>Marathon de Paris le 12 avril : 60 000 coureurs</span>
+      <span>Coupe du Monde 2026 — J-68</span>
+      <span>IKEA Suède : un homme vivait caché dans le magasin depuis 3 ans</span>
+    </div>
+  </div>
+</div>
+<div class="cats-bar">
+  <a href="index.html"><button class="cat-btn" id="catbtn-home">🌐 Tout</button></a>
+  <a href="monde.html"><button class="cat-btn" id="catbtn-monde">🌍 Monde</button></a>
+  <a href="gossip.html"><button class="cat-btn" id="catbtn-gossip">🎤 Gossip</button></a>
+  <a href="tech.html"><button class="cat-btn" id="catbtn-tech">💻 Tech</button></a>
+  <a href="sport.html"><button class="cat-btn" id="catbtn-sport">⚽ Sport</button></a>
+  <a href="culture.html"><button class="cat-btn" id="catbtn-culture">🎬 Culture</button></a>
+  <a href="science.html"><button class="cat-btn" id="catbtn-science">🧬 Science</button></a>
+  <a href="wtf.html"><button class="cat-btn" id="catbtn-wtf">🤯 WTF</button></a>
+</div>
+<div class="datebar">
+  <span><strong id="dateStr">Samedi 5 avril 2026</strong> — L'actu de partout, sur tout</span>
+  <span>Mis à jour il y a 4 minutes</span>
+</div>
+<script>
+const d=new Date();
+const el=document.getElementById('dateStr');
+if(el) el.textContent=d.toLocaleDateString('fr-FR',{weekday:'long',year:'numeric',month:'long',day:'numeric'}).replace(/^\w/,x=>x.toUpperCase());
+</script>
+
+<script>document.addEventListener('DOMContentLoaded',function(){
+  var el=document.getElementById('nav-home'); if(el) el.classList.add('active');
+});</script>
+<div class="datebar" style="padding:8px 2.5rem">
+  <strong>SPILL</strong> — L'actu de partout, sur tout
+</div>
+
+<div class="static-wrap">
+  <div class="badge">Légal</div>
+  <div class="static-title">Mentions légales</div>
+  <div class="static-sub">Informations légales obligatoires concernant le site spill.media</div>
+  <div class="static-body">
+    <h2>Éditeur du site</h2>
+    <p><strong>SPILL Media</strong><br>
+    Site internet : spill.media<br>
+    Email : contact@spill.media</p>
+
+    <h2>Hébergement</h2>
+    <p>Ce site est hébergé par <strong>Netlify Inc.</strong><br>
+    44 Montgomery Street, Suite 300, San Francisco, California 94104, États-Unis<br>
+    netlify.com</p>
+
+    <h2>Propriété intellectuelle</h2>
+    <p>L'ensemble du contenu publié sur spill.media (articles, textes, images, graphismes, logo) est la propriété exclusive de SPILL Media, sauf mention contraire. Toute reproduction, totale ou partielle, est strictement interdite sans autorisation préalable écrite.</p>
+    <p>Les images utilisées sur ce site proviennent des équipes SPILL ou de sources libres de droits (Unsplash, Pexels, Wikimedia Commons) et sont utilisées conformément à leurs licences respectives.</p>
+
+    <h2>Données personnelles — RGPD</h2>
+    <p>SPILL Media s'engage à respecter la réglementation en vigueur concernant la protection des données personnelles (RGPD — Règlement UE 2016/679).</p>
+    <p>Les données collectées (adresse email via la newsletter) sont utilisées uniquement pour l'envoi de la newsletter SPILL. Elles ne sont jamais revendues ni partagées avec des tiers. Vous pouvez exercer vos droits d'accès, de rectification et de suppression à tout moment en écrivant à : <a href="mailto:spill.media3@gmail.com">spill.media3@gmail.com</a>.</p>
+
+    <h2>Cookies</h2>
+    <p>Ce site utilise des cookies fonctionnels nécessaires à son bon fonctionnement. Aucun cookie publicitaire ou de tracking tiers n'est utilisé sans votre consentement explicite.</p>
+
+    <h2>Responsabilité</h2>
+    <p>SPILL Media s'efforce d'assurer l'exactitude et la mise à jour des informations publiées. Cependant, nous déclinons toute responsabilité quant aux erreurs ou omissions qui pourraient subsister dans les articles. Les informations publiées ont une valeur informative et ne constituent pas des conseils juridiques, financiers ou médicaux.</p>
+
+    <h2>Droit applicable</h2>
+    <p>Le présent site et ses mentions légales sont soumis au droit français. En cas de litige, les tribunaux français seront seuls compétents.</p>
+
+    <p style="color:var(--muted);font-size:.8rem;margin-top:2rem">Dernière mise à jour : avril 2026</p>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-logo">SPILL<em>L'actu de partout, sur tout · 2026</em></div>
+    <div class="foot-links">
+      <a href="a-propos.html">À propos</a><a href="contact.html">Contact</a><a href="mentions-legales.html">Mentions légales</a><a href="newsletter.html">Newsletter</a>
+    </div>
+    <div class="foot-copy">© SPILL 2026</div>
+  </div>
+</footer>
+
+</body></html>

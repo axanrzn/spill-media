@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Nouvelle-Calédonie : l'impasse politique qui met Paris dans l'embarras | SPILL</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<nav>
+  <a href="index.html" class="logo">SPILL<em>.</em></a>
+  <ul class="nav-links">
+    <li><a href="index.html" id="nav-home">Accueil</a></li>
+    <li><a href="monde.html" id="nav-monde">Monde</a></li>
+    <li><a href="gossip.html" id="nav-gossip">Gossip</a></li>
+    <li><a href="tech.html" id="nav-tech">Tech</a></li>
+    <li><a href="sport.html" id="nav-sport">Sport</a></li>
+    <li><a href="culture.html" id="nav-culture">Culture</a></li>
+    <li><a href="science.html" id="nav-science">Science</a></li>
+    <li><a href="wtf.html" id="nav-wtf">WTF</a></li>
+  </ul>
+  <div class="nav-right">
+    <form action="recherche.html" method="GET" style="display:flex;align-items:center">
+    <input class="nav-search" type="search" name="q" placeholder="🔍 Rechercher..." 
+           onkeypress="if(event.key==='Enter'){this.form.submit()}">
+  </form>
+    <a href="newsletter.html" class="nav-btn" style="text-decoration:none">S'inscrire</a>
+  </div>
+</nav>
+<div class="ticker-wrap">
+  <div class="ticker-label"><div class="tdot"></div>BREAKING</div>
+  <div class="ticker-track">
+    <div class="ticker-inner">
+      <span>Guerre Moyen-Orient : deux avions US abattus par l'Iran — un pilote secouru</span>
+      <span>Rima Hassan placée en garde à vue pour apologie du terrorisme</span>
+      <span>Artemis II : premiers soucis techniques dans l'espace</span>
+      <span>Trump attaque Macron personnellement depuis la Maison-Blanche</span>
+      <span>Flambée du carburant : prêt flash Bpifrance pour les TPE/PME</span>
+      <span>Marathon de Paris le 12 avril : 60 000 coureurs</span>
+      <span>Coupe du Monde 2026 — J-68</span>
+      <span>IKEA Suède : un homme vivait caché dans le magasin depuis 3 ans</span>
+      <span>Guerre Moyen-Orient : deux avions US abattus par l'Iran — un pilote secouru</span>
+      <span>Rima Hassan placée en garde à vue pour apologie du terrorisme</span>
+      <span>Artemis II : premiers soucis techniques dans l'espace</span>
+      <span>Trump attaque Macron personnellement depuis la Maison-Blanche</span>
+      <span>Flambée du carburant : prêt flash Bpifrance pour les TPE/PME</span>
+      <span>Marathon de Paris le 12 avril : 60 000 coureurs</span>
+      <span>Coupe du Monde 2026 — J-68</span>
+      <span>IKEA Suède : un homme vivait caché dans le magasin depuis 3 ans</span>
+    </div>
+  </div>
+</div>
+<div class="cats-bar">
+  <a href="index.html"><button class="cat-btn" id="catbtn-home">🌐 Tout</button></a>
+  <a href="monde.html"><button class="cat-btn" id="catbtn-monde">🌍 Monde</button></a>
+  <a href="gossip.html"><button class="cat-btn" id="catbtn-gossip">🎤 Gossip</button></a>
+  <a href="tech.html"><button class="cat-btn" id="catbtn-tech">💻 Tech</button></a>
+  <a href="sport.html"><button class="cat-btn" id="catbtn-sport">⚽ Sport</button></a>
+  <a href="culture.html"><button class="cat-btn" id="catbtn-culture">🎬 Culture</button></a>
+  <a href="science.html"><button class="cat-btn" id="catbtn-science">🧬 Science</button></a>
+  <a href="wtf.html"><button class="cat-btn" id="catbtn-wtf">🤯 WTF</button></a>
+</div>
+<div class="datebar">
+  <span><strong id="dateStr">Samedi 5 avril 2026</strong> — L'actu de partout, sur tout</span>
+  <span>Mis à jour il y a 4 minutes</span>
+</div>
+<script>
+const d=new Date();
+const el=document.getElementById('dateStr');
+if(el) el.textContent=d.toLocaleDateString('fr-FR',{weekday:'long',year:'numeric',month:'long',day:'numeric'}).replace(/^\w/,x=>x.toUpperCase());
+</script>
+
+<script>document.addEventListener('DOMContentLoaded',function(){var el=document.getElementById('nav-monde');if(el)el.classList.add('active');});</script>
+<div class="art-wrap">
+  <a href="monde.html" class="art-back">← Monde</a>
+  <div class="art-cat">🌍 Monde</div>
+  <h1 class="art-title">Nouvelle-Calédonie : l'impasse politique qui met Paris dans l'embarras</h1>
+  <p class="art-sub">Aucun accord politique en vue, le monde économique s'impatiente, les indépendantistes maintiennent la pression. La Nouvelle-Calédonie est dans une crise institutionnelle profonde que Paris ne parvient pas à résoudre.</p>
+  <div class="art-meta">
+    <span class="art-author">SPILL · Rédaction</span>
+    <span>Il y a 6h</span>
+    <span>Source : Franceinfo / AFP</span>
+    <span>👁 88k vues</span>
+  </div>
+  <div class="art-hero-img" style="background:linear-gradient(160deg,#001a20,#003040,#004060);overflow:hidden">
+    <img src="https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=1200&q=80" alt="Nouvelle-Calédonie : l'impasse politique qui met Paris dans " loading="lazy"
+    style="width:100%;height:100%;object-fit:cover;display:block"
+    onerror="this.src='https://picsum.photos/seed/nouvelle-caledonie-2026/1200/630';this.onerror=null">
+  </div>
+  <div class="art-body"><p>« Redonnons au plus vite la parole aux Calédoniens » — c'est l'appel lancé par le monde économique local, qui fustige "la politique politicienne" qui paralyse l'île depuis des mois. La Nouvelle-Calédonie est dans une impasse : ni accord sur son statut, ni clarté sur son avenir, et une économie qui souffre de cette incertitude permanente.</p>
+<h2>Le contexte</h2>
+<p>Après les émeutes de 2024 — les plus graves de l'histoire de l'île — et les trois référendums sur l'indépendance (tous rejetés mais dans des conditions controversées), la Calédonie cherche encore son modèle. Les Kanak veulent plus d'autonomie, voire l'indépendance. Les loyalistes veulent rester dans la France. Et Paris navigue entre les deux sans cap clair.</p>
+<h2>L'enjeu du nickel</h2>
+<p>La Nouvelle-Calédonie possède environ 25% des réserves mondiales de nickel — métal stratégique pour la transition énergétique. La question de qui contrôle cette ressource est au cœur de toutes les tensions politiques, même si elle n'est jamais dite clairement.</p></div>
+  <div class="art-tags"><span class="tag">#NouvelleCalédonie</span> <span class="tag">#France</span> <span class="tag">#Indépendance</span> <span class="tag">#Pacifique</span> <span class="tag">#Politique</span> <span class="tag">#Monde</span></div>
+</div>
+<footer>
+  <div class="foot-inner">
+    <div class="foot-logo">SPILL<em>L'actu de partout, sur tout · 2026</em></div>
+    <div class="foot-links">
+      <a href="a-propos.html">À propos</a><a href="contact.html">Contact</a><a href="mentions-legales.html">Mentions légales</a><a href="newsletter.html">Newsletter</a>
+    </div>
+    <div class="foot-copy">© SPILL 2026</div>
+  </div>
+</footer>
+
+</body></html>

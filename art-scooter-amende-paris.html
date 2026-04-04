@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Leur scooter volé, ils oublient de le déclarer — la mairie de Paris le | SPILL</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<nav>
+  <a href="index.html" class="logo">SPILL<em>.</em></a>
+  <ul class="nav-links">
+    <li><a href="index.html" id="nav-home">Accueil</a></li>
+    <li><a href="monde.html" id="nav-monde">Monde</a></li>
+    <li><a href="gossip.html" id="nav-gossip">Gossip</a></li>
+    <li><a href="tech.html" id="nav-tech">Tech</a></li>
+    <li><a href="sport.html" id="nav-sport">Sport</a></li>
+    <li><a href="culture.html" id="nav-culture">Culture</a></li>
+    <li><a href="science.html" id="nav-science">Science</a></li>
+    <li><a href="wtf.html" id="nav-wtf">WTF</a></li>
+  </ul>
+  <div class="nav-right">
+    <form action="recherche.html" method="GET" style="display:flex;align-items:center">
+    <input class="nav-search" type="search" name="q" placeholder="🔍 Rechercher..." 
+           onkeypress="if(event.key==='Enter'){this.form.submit()}">
+  </form>
+    <a href="newsletter.html" class="nav-btn" style="text-decoration:none">S'inscrire</a>
+  </div>
+</nav>
+<div class="ticker-wrap">
+  <div class="ticker-label"><div class="tdot"></div>BREAKING</div>
+  <div class="ticker-track">
+    <div class="ticker-inner">
+      <span>Guerre Moyen-Orient : deux avions US abattus par l'Iran — un pilote secouru</span>
+      <span>Rima Hassan placée en garde à vue pour apologie du terrorisme</span>
+      <span>Artemis II : premiers soucis techniques dans l'espace</span>
+      <span>Trump attaque Macron personnellement depuis la Maison-Blanche</span>
+      <span>Flambée du carburant : prêt flash Bpifrance pour les TPE/PME</span>
+      <span>Marathon de Paris le 12 avril : 60 000 coureurs</span>
+      <span>Coupe du Monde 2026 — J-68</span>
+      <span>IKEA Suède : un homme vivait caché dans le magasin depuis 3 ans</span>
+      <span>Guerre Moyen-Orient : deux avions US abattus par l'Iran — un pilote secouru</span>
+      <span>Rima Hassan placée en garde à vue pour apologie du terrorisme</span>
+      <span>Artemis II : premiers soucis techniques dans l'espace</span>
+      <span>Trump attaque Macron personnellement depuis la Maison-Blanche</span>
+      <span>Flambée du carburant : prêt flash Bpifrance pour les TPE/PME</span>
+      <span>Marathon de Paris le 12 avril : 60 000 coureurs</span>
+      <span>Coupe du Monde 2026 — J-68</span>
+      <span>IKEA Suède : un homme vivait caché dans le magasin depuis 3 ans</span>
+    </div>
+  </div>
+</div>
+<div class="cats-bar">
+  <a href="index.html"><button class="cat-btn" id="catbtn-home">🌐 Tout</button></a>
+  <a href="monde.html"><button class="cat-btn" id="catbtn-monde">🌍 Monde</button></a>
+  <a href="gossip.html"><button class="cat-btn" id="catbtn-gossip">🎤 Gossip</button></a>
+  <a href="tech.html"><button class="cat-btn" id="catbtn-tech">💻 Tech</button></a>
+  <a href="sport.html"><button class="cat-btn" id="catbtn-sport">⚽ Sport</button></a>
+  <a href="culture.html"><button class="cat-btn" id="catbtn-culture">🎬 Culture</button></a>
+  <a href="science.html"><button class="cat-btn" id="catbtn-science">🧬 Science</button></a>
+  <a href="wtf.html"><button class="cat-btn" id="catbtn-wtf">🤯 WTF</button></a>
+</div>
+<div class="datebar">
+  <span><strong id="dateStr">Samedi 5 avril 2026</strong> — L'actu de partout, sur tout</span>
+  <span>Mis à jour il y a 4 minutes</span>
+</div>
+<script>
+const d=new Date();
+const el=document.getElementById('dateStr');
+if(el) el.textContent=d.toLocaleDateString('fr-FR',{weekday:'long',year:'numeric',month:'long',day:'numeric'}).replace(/^\w/,x=>x.toUpperCase());
+</script>
+
+<script>document.addEventListener('DOMContentLoaded',function(){var el=document.getElementById('nav-wtf');if(el)el.classList.add('active');});</script>
+<div class="art-wrap">
+  <a href="wtf.html" class="art-back">← WTF</a>
+  <div class="art-cat">🤯 WTF</div>
+  <h1 class="art-title">Leur scooter volé, ils oublient de le déclarer — la mairie de Paris leur réclame 18 000€ d'amende</h1>
+  <p class="art-sub">Un couple parisien s'est fait voler son scooter en 2023. Ne l'ayant pas déclaré volé, ils ont continué à recevoir des amendes de stationnement. Total cumulé : 18 000 euros que la mairie exige maintenant.</p>
+  <div class="art-meta"><span class="art-author">SPILL · Rédaction</span><span>Il y a 7h</span><span>Source : Europe 1 / Le Parisien</span><span>👁 1.4M vues</span></div>
+  <div class="art-hero-img" style="background:linear-gradient(160deg,#1a1a00,#2a2a00,#3a3a00);overflow:hidden">
+    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80" alt="Leur scooter volé, ils oublient de le déclarer — la mairie d" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" onerror="this.src='https://picsum.photos/seed/scooter-amende-paris-18000/1200/630';this.onerror=null">
+  </div>
+  <div class="art-body"><p>L'histoire est tellement kafkaïenne qu'elle a mis des semaines à être crue. En 2023, Julien et Marie, un couple de Parisiens, se font voler leur scooter garé dans le 11e arrondissement. Débordés par les démarches administratives, ils n'ont jamais pris le temps de déclarer officiellement le vol. Une omission qui leur coûte aujourd'hui 18 000 euros.</p>
+<h2>Le mécanisme infernal</h2>
+<p>Pendant trois ans, la plaque d'immatriculation de leur scooter — volé, puis visiblement abandonné par le voleur dans différents arrondissements — a continué à recevoir des contraventions de stationnement. La mairie a automatiquement majoré chaque amende non payée. Résultat : 18 000 euros de pénalités pour un scooter qu'ils ne possèdent plus depuis 2023.</p>
+<h2>La réponse de la mairie</h2>
+<p>La Ville de Paris a indiqué que "les procédures sont claires et ont été respectées" et que le couple "aurait dû déclarer le vol en temps et en heure". Une pétition en ligne pour "sauver Julien et Marie de la mairie de Paris" a récolté plus de 200 000 signatures en 48 heures.</p></div>
+  <div class="art-tags"><span class="tag">#Paris</span> <span class="tag">#Scooter</span> <span class="tag">#Amende</span> <span class="tag">#WTF</span> <span class="tag">#France</span> <span class="tag">#Kafkaïen</span> <span class="tag">#Insolite</span></div>
+</div>
+<footer>
+  <div class="foot-inner">
+    <div class="foot-logo">SPILL<em>L'actu de partout, sur tout · 2026</em></div>
+    <div class="foot-links">
+      <a href="a-propos.html">À propos</a><a href="contact.html">Contact</a><a href="mentions-legales.html">Mentions légales</a><a href="newsletter.html">Newsletter</a>
+    </div>
+    <div class="foot-copy">© SPILL 2026</div>
+  </div>
+</footer>
+
+</body></html>

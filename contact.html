@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Contact — SPILL</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+.static-wrap{max-width:680px;margin:0 auto;padding:3rem 2rem 4rem}
+.static-title{font-family:'Bebas Neue',sans-serif;font-size:3rem;letter-spacing:2px;color:var(--ink);margin-bottom:.5rem}
+.static-sub{font-size:1.05rem;color:var(--muted);margin-bottom:2.5rem;padding-bottom:2rem;border-bottom:2px solid var(--red);line-height:1.6}
+.form-group{margin-bottom:1.25rem}
+.form-label{display:block;font-size:.78rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink);margin-bottom:.5rem}
+.form-input,.form-textarea{width:100%;background:var(--card);border:1.5px solid var(--line);border-radius:4px;padding:12px 15px;font-size:.95rem;font-family:'DM Sans',sans-serif;color:var(--ink);transition:border-color .2s;display:block}
+.form-input:focus,.form-textarea:focus{outline:none;border-color:var(--red)}
+.form-textarea{min-height:140px;resize:vertical;line-height:1.6}
+.form-select{width:100%;background:var(--card);border:1.5px solid var(--line);border-radius:4px;padding:12px 15px;font-size:.95rem;font-family:'DM Sans',sans-serif;color:var(--ink);cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
+.form-select:focus{outline:none;border-color:var(--red)}
+.submit-btn{width:100%;background:var(--ink);border:none;border-radius:4px;padding:14px;color:#fff;font-family:'DM Sans',sans-serif;font-size:.88rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;transition:background .2s;margin-top:.5rem}
+.submit-btn:hover{background:var(--red)}
+.success-msg{display:none;background:rgba(0,160,0,.08);border:1.5px solid rgba(0,160,0,.3);border-radius:4px;padding:1rem 1.5rem;color:#006000;font-size:.9rem;margin-top:1rem;line-height:1.6}
+.badge{display:inline-block;background:var(--red);color:#fff;font-size:.65rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;border-radius:2px;margin-bottom:1rem}
+</style>
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<nav>
+  <a href="index.html" class="logo">SPILL<em>.</em></a>
+  <ul class="nav-links">
+    <li><a href="index.html" id="nav-home">Accueil</a></li>
+    <li><a href="monde.html" id="nav-monde">Monde</a></li>
+    <li><a href="gossip.html" id="nav-gossip">Gossip</a></li>
+    <li><a href="tech.html" id="nav-tech">Tech</a></li>
+    <li><a href="sport.html" id="nav-sport">Sport</a></li>
+    <li><a href="culture.html" id="nav-culture">Culture</a></li>
+    <li><a href="science.html" id="nav-science">Science</a></li>
+    <li><a href="wtf.html" id="nav-wtf">WTF</a></li>
+  </ul>
+  <div class="nav-right">
+    <form action="recherche.html" method="GET" style="display:flex;align-items:center">
+    <input class="nav-search" type="search" name="q" placeholder="🔍 Rechercher..." 
+           onkeypress="if(event.key==='Enter'){this.form.submit()}">
+  </form>
+    <a href="newsletter.html" class="nav-btn" style="text-decoration:none">S'inscrire</a>
+  </div>
+</nav>
+<div class="ticker-wrap">
+  <div class="ticker-label"><div class="tdot"></div>BREAKING</div>
+  <div class="ticker-track">
+    <div class="ticker-inner">
+      <span>Guerre Moyen-Orient : deux avions US abattus par l'Iran — un pilote secouru</span>
+      <span>Rima Hassan placée en garde à vue pour apologie du terrorisme</span>
+      <span>Artemis II : premiers soucis techniques dans l'espace</span>
+      <span>Trump attaque Macron personnellement depuis la Maison-Blanche</span>
+      <span>Flambée du carburant : prêt flash Bpifrance pour les TPE/PME</span>
+      <span>Marathon de Paris le 12 avril : 60 000 coureurs</span>
+      <span>Coupe du Monde 2026 — J-68</span>
+      <span>IKEA Suède : un homme vivait caché dans le magasin depuis 3 ans</span>
+      <span>Guerre Moyen-Orient : deux avions US abattus par l'Iran — un pilote secouru</span>
+      <span>Rima Hassan placée en garde à vue pour apologie du terrorisme</span>
+      <span>Artemis II : premiers soucis techniques dans l'espace</span>
+      <span>Trump attaque Macron personnellement depuis la Maison-Blanche</span>
+      <span>Flambée du carburant : prêt flash Bpifrance pour les TPE/PME</span>
+      <span>Marathon de Paris le 12 avril : 60 000 coureurs</span>
+      <span>Coupe du Monde 2026 — J-68</span>
+      <span>IKEA Suède : un homme vivait caché dans le magasin depuis 3 ans</span>
+    </div>
+  </div>
+</div>
+<div class="cats-bar">
+  <a href="index.html"><button class="cat-btn" id="catbtn-home">🌐 Tout</button></a>
+  <a href="monde.html"><button class="cat-btn" id="catbtn-monde">🌍 Monde</button></a>
+  <a href="gossip.html"><button class="cat-btn" id="catbtn-gossip">🎤 Gossip</button></a>
+  <a href="tech.html"><button class="cat-btn" id="catbtn-tech">💻 Tech</button></a>
+  <a href="sport.html"><button class="cat-btn" id="catbtn-sport">⚽ Sport</button></a>
+  <a href="culture.html"><button class="cat-btn" id="catbtn-culture">🎬 Culture</button></a>
+  <a href="science.html"><button class="cat-btn" id="catbtn-science">🧬 Science</button></a>
+  <a href="wtf.html"><button class="cat-btn" id="catbtn-wtf">🤯 WTF</button></a>
+</div>
+<div class="datebar">
+  <span><strong id="dateStr">Samedi 5 avril 2026</strong> — L'actu de partout, sur tout</span>
+  <span>Mis à jour il y a 4 minutes</span>
+</div>
+<script>
+const d=new Date();
+const el=document.getElementById('dateStr');
+if(el) el.textContent=d.toLocaleDateString('fr-FR',{weekday:'long',year:'numeric',month:'long',day:'numeric'}).replace(/^\w/,x=>x.toUpperCase());
+</script>
+
+<script>document.addEventListener('DOMContentLoaded',function(){})</script>
+<div class="datebar" style="padding:8px 2.5rem">
+  <strong>SPILL</strong> — L'actu de partout, sur tout
+</div>
+<div class="static-wrap">
+  <div class="badge">Contact</div>
+  <div class="static-title">On est à l'écoute.</div>
+  <div class="static-sub">SPILL est un média en construction. Chaque retour compte. Que vous soyez lecteur, journaliste, annonceur ou juste quelqu'un qui veut nous dire ce qu'il pense — on vous lit.</div>
+
+  <form id="contactForm" action="https://formsubmit.co/spill.media3@gmail.com" method="POST">
+    <!-- Formsubmit config -->
+    <input type="hidden" name="_subject" value="Nouveau message depuis spill.media">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="box">
+    <input type="hidden" name="_next" value="https://spill.media/contact.html?sent=1">
+    <input type="text" name="_honey" style="display:none">
+
+    <div class="form-group">
+      <label class="form-label" for="name">Ton prénom / nom</label>
+      <input class="form-input" type="text" id="name" name="name" placeholder="Ex : Lucie Martin" required>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="email">Ton adresse email</label>
+      <input class="form-input" type="email" id="email" name="email" placeholder="ton@email.fr" required>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="sujet">Sujet</label>
+      <select class="form-select" id="sujet" name="sujet" required>
+        <option value="" disabled selected>Choisir un sujet...</option>
+        <option value="Signaler une info">📰 Signaler une info ou un sujet</option>
+        <option value="Corriger un article">✏️ Corriger un article</option>
+        <option value="Partenariat / Publicité">📢 Partenariat / Publicité</option>
+        <option value="Rejoindre l'équipe">💼 Rejoindre l'équipe</option>
+        <option value="Question">❓ Question générale</option>
+        <option value="Autre">💬 Autre</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="message">Ton message</label>
+      <textarea class="form-textarea" id="message" name="message" placeholder="Dis-nous tout..." required></textarea>
+    </div>
+    <button type="submit" class="submit-btn">Envoyer le message →</button>
+  </form>
+
+  <div class="success-msg" id="successMsg">
+    ✅ <strong>Message envoyé !</strong> On t'a bien reçu. On te répond dans les meilleurs délais à <strong>spill.media3@gmail.com</strong>.
+  </div>
+</div>
+
+<script>
+// Afficher message de succès si redirect avec ?sent=1
+if(window.location.search.includes('sent=1')) {
+  document.getElementById('contactForm').style.display='none';
+  document.getElementById('successMsg').style.display='block';
+}
+</script>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-logo">SPILL<em>L'actu de partout, sur tout · 2026</em></div>
+    <div class="foot-links">
+      <a href="a-propos.html">À propos</a><a href="contact.html">Contact</a><a href="mentions-legales.html">Mentions légales</a><a href="newsletter.html">Newsletter</a>
+    </div>
+    <div class="foot-copy">© SPILL 2026</div>
+  </div>
+</footer>
+
+</body></html>

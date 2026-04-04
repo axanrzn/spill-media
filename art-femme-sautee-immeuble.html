@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Montréal : un homme enflamme l'appartement, enferme sa compagne — elle | SPILL</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+</head><body>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<nav>
+  <a href="index.html" class="logo">SPILL<em>.</em></a>
+  <ul class="nav-links">
+    <li><a href="index.html" id="nav-home">Accueil</a></li>
+    <li><a href="monde.html" id="nav-monde">Monde</a></li>
+    <li><a href="gossip.html" id="nav-gossip">Gossip</a></li>
+    <li><a href="tech.html" id="nav-tech">Tech</a></li>
+    <li><a href="sport.html" id="nav-sport">Sport</a></li>
+    <li><a href="culture.html" id="nav-culture">Culture</a></li>
+    <li><a href="science.html" id="nav-science">Science</a></li>
+    <li><a href="wtf.html" id="nav-wtf">WTF</a></li>
+  </ul>
+  <div class="nav-right">
+    <form action="recherche.html" method="GET" style="display:flex;align-items:center">
+    <input class="nav-search" type="search" name="q" placeholder="🔍 Rechercher..." 
+           onkeypress="if(event.key==='Enter'){this.form.submit()}">
+  </form>
+    <a href="newsletter.html" class="nav-btn" style="text-decoration:none">S'inscrire</a>
+  </div>
+</nav>
+<div class="ticker-wrap">
+  <div class="ticker-label"><div class="tdot"></div>BREAKING</div>
+  <div class="ticker-track">
+    <div class="ticker-inner">
+      <span>Guerre Moyen-Orient : deux avions US abattus par l'Iran — un pilote secouru</span>
+      <span>Rima Hassan placée en garde à vue pour apologie du terrorisme</span>
+      <span>Artemis II : premiers soucis techniques dans l'espace</span>
+      <span>Trump attaque Macron personnellement depuis la Maison-Blanche</span>
+      <span>Flambée du carburant : prêt flash Bpifrance pour les TPE/PME</span>
+      <span>Marathon de Paris le 12 avril : 60 000 coureurs</span>
+      <span>Coupe du Monde 2026 — J-68</span>
+      <span>IKEA Suède : un homme vivait caché dans le magasin depuis 3 ans</span>
+      <span>Guerre Moyen-Orient : deux avions US abattus par l'Iran — un pilote secouru</span>
+      <span>Rima Hassan placée en garde à vue pour apologie du terrorisme</span>
+      <span>Artemis II : premiers soucis techniques dans l'espace</span>
+      <span>Trump attaque Macron personnellement depuis la Maison-Blanche</span>
+      <span>Flambée du carburant : prêt flash Bpifrance pour les TPE/PME</span>
+      <span>Marathon de Paris le 12 avril : 60 000 coureurs</span>
+      <span>Coupe du Monde 2026 — J-68</span>
+      <span>IKEA Suède : un homme vivait caché dans le magasin depuis 3 ans</span>
+    </div>
+  </div>
+</div>
+<div class="cats-bar">
+  <a href="index.html"><button class="cat-btn" id="catbtn-home">🌐 Tout</button></a>
+  <a href="monde.html"><button class="cat-btn" id="catbtn-monde">🌍 Monde</button></a>
+  <a href="gossip.html"><button class="cat-btn" id="catbtn-gossip">🎤 Gossip</button></a>
+  <a href="tech.html"><button class="cat-btn" id="catbtn-tech">💻 Tech</button></a>
+  <a href="sport.html"><button class="cat-btn" id="catbtn-sport">⚽ Sport</button></a>
+  <a href="culture.html"><button class="cat-btn" id="catbtn-culture">🎬 Culture</button></a>
+  <a href="science.html"><button class="cat-btn" id="catbtn-science">🧬 Science</button></a>
+  <a href="wtf.html"><button class="cat-btn" id="catbtn-wtf">🤯 WTF</button></a>
+</div>
+<div class="datebar">
+  <span><strong id="dateStr">Samedi 5 avril 2026</strong> — L'actu de partout, sur tout</span>
+  <span>Mis à jour il y a 4 minutes</span>
+</div>
+<script>
+const d=new Date();
+const el=document.getElementById('dateStr');
+if(el) el.textContent=d.toLocaleDateString('fr-FR',{weekday:'long',year:'numeric',month:'long',day:'numeric'}).replace(/^\w/,x=>x.toUpperCase());
+</script>
+
+<div class="art-wrap">
+  <a href="monde.html" class="art-back">← Monde</a>
+  <div class="art-cat">🌍 Monde</div>
+  <h1 class="art-title">Montréal : un homme enflamme l'appartement, enferme sa compagne — elle saute du 3e étage et décède</h1>
+  <p class="art-sub">Un drame horrible s'est produit cette nuit à Montréal. Un homme a mis le feu à son appartement et a enfermé sa compagne à l'intérieur. Incapable de sortir, elle a sauté du troisième étage et est morte de ses blessures.</p>
+  <div class="art-meta"><span class="art-author">SPILL · Rédaction</span><span>Il y a 6h</span><span>Source : Dormir au Courant / Médias locaux</span><span>👁 1.4M vues</span></div>
+  <div class="art-hero-img" style="background:linear-gradient(160deg,#1a0000,#300000,#400000);overflow:hidden">
+    <img src="https://images.unsplash.com/photo-1504700610630-ac6aba3536d3?w=1200&q=80" alt="Montréal : un homme enflamme l'appartement, enferm" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+  </div>
+  <div class="art-body"><p>Un drame d'une violence extrême s'est produit dans la nuit de vendredi à samedi à Montréal, au Canada. Un homme aurait délibérément mis le feu à l'appartement qu'il partageait avec sa compagne, puis l'aurait enfermée à l'intérieur pour l'empêcher de fuir.</p>
+<h2>Ce qui s'est passé</h2>
+<p>Selon les témoins et les premiers éléments de l'enquête, la jeune femme, dont l'identité n'a pas été divulguée, s'est retrouvée piégée dans l'appartement en feu. Incapable de sortir par la porte, elle a tenté de fuir par la fenêtre et a sauté du troisième étage. Elle est morte des suites de ses blessures peu après son arrivée à l'hôpital.</p>
+<h2>L'auteur présumé</h2>
+<p>L'homme a été interpellé rapidement après les faits. Il est mis en examen pour meurtre avec préméditation. Les enquêteurs étudient si cet acte s'inscrit dans un contexte de violence conjugale antérieure.</p>
+<h2>Le contexte des féminicides au Canada</h2>
+<p>Au Canada, une femme est tuée par son partenaire ou ex-partenaire en moyenne tous les six jours. Les associations de lutte contre les violences faites aux femmes ont immédiatement réagi en demandant des moyens supplémentaires pour la protection des victimes.</p></div>
+  <div class="art-tags"><span class="tag">#Montréal</span> <span class="tag">#Féminicide</span> <span class="tag">#Violence</span> <span class="tag">#Canada</span> <span class="tag">#Tragédie</span> <span class="tag">#Monde</span> <span class="tag">#Faitsdivers</span></div>
+</div>
+<footer>
+  <div class="foot-inner">
+    <div class="foot-logo">SPILL<em>L'actu de partout, sur tout · 2026</em></div>
+    <div class="foot-links">
+      <a href="a-propos.html">À propos</a><a href="contact.html">Contact</a><a href="mentions-legales.html">Mentions légales</a><a href="newsletter.html">Newsletter</a>
+    </div>
+    <div class="foot-copy">© SPILL 2026</div>
+  </div>
+</footer>
+
+</body></html>
