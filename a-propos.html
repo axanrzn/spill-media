@@ -3,51 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Ã propos â SPILL</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<title>À propos | SPILL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/spill-media/shared.css">
-<style>
-.static-wrap{max-width:860px;margin:0 auto;padding:3rem 2rem 4rem}
-.static-title{font-family:'Bebas Neue',sans-serif;font-size:3rem;letter-spacing:2px;color:var(--ink);margin-bottom:.5rem}
-.static-sub{font-size:1.1rem;color:var(--muted);margin-bottom:2.5rem;padding-bottom:2rem;border-bottom:2px solid var(--red)}
-.static-body h2{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:1px;color:var(--ink);margin:2.5rem 0 .8rem}
-.static-body p{font-size:.96rem;line-height:1.8;color:rgba(13,13,13,.8);margin-bottom:1.2rem}
-.static-body a{color:var(--red);text-decoration:underline}
-.static-body ul{padding-left:1.5rem;margin-bottom:1.2rem}
-.static-body li{font-size:.96rem;line-height:1.8;color:rgba(13,13,13,.8);margin-bottom:.4rem}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:1.5rem}
-.contact-card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:1.5rem}
-.contact-card h3{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:2px;color:var(--ink);margin-bottom:.5rem}
-.contact-card p{font-size:.85rem;color:var(--muted);margin-bottom:.8rem}
-.contact-card a{display:inline-flex;align-items:center;gap:6px;background:var(--ink);color:#fff;padding:9px 18px;border-radius:3px;font-size:.78rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;text-decoration:none;transition:background .2s}
-.contact-card a:hover{background:var(--red)}
-.nl-form{background:var(--ink);border-radius:6px;padding:2.5rem;margin-top:2rem}
-.nl-form h2{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:#fff;letter-spacing:1px;margin-bottom:.5rem}
-.nl-form p{font-size:.9rem;color:rgba(255,255,255,.5);margin-bottom:1.5rem}
-.nl-form-row{display:flex;gap:10px;flex-wrap:wrap}
-.nl-form input{flex:1;min-width:200px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:3px;padding:12px 16px;color:#fff;font-size:.9rem;font-family:'DM Sans',sans-serif}
-.nl-form input::placeholder{color:rgba(255,255,255,.3)}
-.nl-form input:focus{outline:none;border-color:var(--red)}
-.nl-form button{background:var(--red);border:none;border-radius:3px;padding:12px 24px;color:#fff;font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:background .2s}
-.nl-form button:hover{background:var(--red2)}
-.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:1.5rem}
-.team-card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:1.5rem;text-align:center}
-.team-avatar{width:64px;height:64px;border-radius:50%;background:var(--ink);display:flex;align-items:center;justify-content:center;margin:0 auto .8rem;font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--red);letter-spacing:2px}
-.team-name{font-weight:600;font-size:.9rem;color:var(--ink);margin-bottom:3px}
-.team-role{font-size:.75rem;color:var(--muted)}
-.badge{display:inline-block;background:var(--red);color:#fff;font-size:.65rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;border-radius:2px;margin-bottom:1rem}
-@media(max-width:700px){
-  .contact-grid,.team-grid{grid-template-columns:1fr}
-  .nl-form-row{flex-direction:column}
-  .static-title{font-size:2.2rem}
-}
-</style>
 </head>
 <body>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="shared.css">
-<nav>
-  <a href="index.html" class="logo">SPILL<em>.</em></a>
+<nav class="nav">
+  <a href="index.html" class="nav-logo">SPILL<span>.</span></a>
   <ul class="nav-links">
     <li><a href="index.html" id="nav-home">Accueil</a></li>
     <li><a href="monde.html" id="nav-monde">Monde</a></li>
@@ -60,109 +23,74 @@
   </ul>
   <div class="nav-right">
     <form action="recherche.html" method="GET" style="display:flex;align-items:center">
-    <input class="nav-search" type="search" name="q" placeholder="ð Rechercher..." 
-           onkeypress="if(event.key==='Enter'){this.form.submit()}">
-  </form>
-    <a href="newsletter.html" class="nav-btn" style="text-decoration:none">S'inscrire</a>
+      <input class="nav-search" type="search" name="q" placeholder="🔍 Rechercher...">
+    </form>
+    <a href="newsletter.html" class="nav-btn">S'inscrire</a>
   </div>
 </nav>
-<div class="ticker-wrap">
-  <div class="ticker-label"><div class="tdot"></div>BREAKING</div>
+<div class="ticker">
+  <div class="ticker-label"><div class="ticker-dot"></div>BREAKING</div>
   <div class="ticker-track">
     <div class="ticker-inner">
-      <span>Guerre Moyen-Orient : deux avions US abattus par l'Iran â un pilote secouru</span>
-      <span>Rima Hassan placÃ©e en garde Ã  vue pour apologie du terrorisme</span>
+      <span>Trump donne 48h à l'Iran — l'enfer va se déchaîner</span>
+      <span>Céline Dion : 9 millions d'inscrits pour ses concerts à Paris</span>
+      <span>Rima Hassan placée en garde à vue</span>
       <span>Artemis II : premiers soucis techniques dans l'espace</span>
-      <span>Trump attaque Macron personnellement depuis la Maison-Blanche</span>
-      <span>FlambÃ©e du carburant : prÃªt flash Bpifrance pour les TPE/PME</span>
-      <span>Marathon de Paris le 12 avril : 60 000 coureurs</span>
-      <span>Coupe du Monde 2026 â J-68</span>
-      <span>IKEA SuÃ¨de : un homme vivait cachÃ© dans le magasin depuis 3 ans</span>
-      <span>Guerre Moyen-Orient : deux avions US abattus par l'Iran â un pilote secouru</span>
-      <span>Rima Hassan placÃ©e en garde Ã  vue pour apologie du terrorisme</span>
+      <span>Jeremstar jugé à Nîmes pour son action anti-corrida</span>
+      <span>Squeezie clashe les rentiers immobiliers</span>
+      <span>Trump donne 48h à l'Iran — l'enfer va se déchaîner</span>
+      <span>Céline Dion : 9 millions d'inscrits pour ses concerts à Paris</span>
+      <span>Rima Hassan placée en garde à vue</span>
       <span>Artemis II : premiers soucis techniques dans l'espace</span>
-      <span>Trump attaque Macron personnellement depuis la Maison-Blanche</span>
-      <span>FlambÃ©e du carburant : prÃªt flash Bpifrance pour les TPE/PME</span>
-      <span>Marathon de Paris le 12 avril : 60 000 coureurs</span>
-      <span>Coupe du Monde 2026 â J-68</span>
-      <span>IKEA SuÃ¨de : un homme vivait cachÃ© dans le magasin depuis 3 ans</span>
+      <span>Jeremstar jugé à Nîmes pour son action anti-corrida</span>
+      <span>Squeezie clashe les rentiers immobiliers</span>
     </div>
   </div>
 </div>
-<div class="cats-bar">
-  <a href="index.html"><button class="cat-btn" id="catbtn-home">ð Tout</button></a>
-  <a href="monde.html"><button class="cat-btn" id="catbtn-monde">ð Monde</button></a>
-  <a href="gossip.html"><button class="cat-btn" id="catbtn-gossip">ð¤ Gossip</button></a>
-  <a href="tech.html"><button class="cat-btn" id="catbtn-tech">ð» Tech</button></a>
-  <a href="sport.html"><button class="cat-btn" id="catbtn-sport">â½ Sport</button></a>
-  <a href="culture.html"><button class="cat-btn" id="catbtn-culture">ð¬ Culture</button></a>
-  <a href="science.html"><button class="cat-btn" id="catbtn-science">ð§¬ Science</button></a>
-  <a href="wtf.html"><button class="cat-btn" id="catbtn-wtf">ð¤¯ WTF</button></a>
+<div class="catbar">
+  <a href="index.html"><button class="cat-btn" id="catbtn-home">🌐 Tout</button></a>
+  <a href="monde.html"><button class="cat-btn" id="catbtn-monde">🌍 Monde</button></a>
+  <a href="gossip.html"><button class="cat-btn" id="catbtn-gossip">🎤 Gossip</button></a>
+  <a href="tech.html"><button class="cat-btn" id="catbtn-tech">💻 Tech</button></a>
+  <a href="sport.html"><button class="cat-btn" id="catbtn-sport">⚽ Sport</button></a>
+  <a href="culture.html"><button class="cat-btn" id="catbtn-culture">🎬 Culture</button></a>
+  <a href="science.html"><button class="cat-btn" id="catbtn-science">🧬 Science</button></a>
+  <a href="wtf.html"><button class="cat-btn" id="catbtn-wtf">🤯 WTF</button></a>
 </div>
 <div class="datebar">
-  <span><strong id="dateStr">Samedi 5 avril 2026</strong> â L'actu de partout, sur tout</span>
-  <span>Mis Ã  jour il y a 4 minutes</span>
+  <span><strong id="dateStr">Mercredi 8 avril 2026</strong> — L'actu de partout, sur tout</span>
+  <span>Mis à jour il y a 4 minutes</span>
 </div>
-<script>
-const d=new Date();
-const el=document.getElementById('dateStr');
-if(el) el.textContent=d.toLocaleDateString('fr-FR',{weekday:'long',year:'numeric',month:'long',day:'numeric'}).replace(/^\w/,x=>x.toUpperCase());
-</script>
-
-<script>document.addEventListener('DOMContentLoaded',function(){
-  var el=document.getElementById('nav-home'); if(el) el.classList.add('active');
-});</script>
-<div class="datebar" style="padding:8px 2.5rem">
-  <strong>SPILL</strong> â L'actu de partout, sur tout
-</div>
-
-<div class="static-wrap">
-  <div class="badge">Ã propos</div>
-  <div class="static-title">On est SPILL.</div>
-  <div class="static-sub">Le mÃ©dia qui couvre tout, sur tout. Sans filtre. Sans bullshit.</div>
-  <div class="static-body">
-    <p>SPILL est nÃ© d'une idÃ©e simple : l'actu devrait Ãªtre accessible, honnÃªte, et couvrir <em>vraiment</em> tout â la guerre en Iran, le gossip des cÃ©lÃ©britÃ©s, les dÃ©couvertes scientifiques, le WTF du quotidien. Sans hiÃ©rarchie arbitraire. Sans condescendance.</p>
-    <p>On croit que les gens peuvent s'intÃ©resser Ã  la fois Ã  la gÃ©opolitique du Moyen-Orient ET au drama de la Fashion Week. Et qu'un bon mÃ©dia doit Ãªtre capable de traiter les deux avec le mÃªme sÃ©rieux.</p>
-
-    <h2>Notre philosophie</h2>
-    <p>Pas de clickbait pour le clickbait. Pas de titres racoleurs qui ne tiennent pas leurs promesses. Nos articles sont sourcÃ©s, vÃ©rifiÃ©s, et Ã©crits pour Ãªtre lus jusqu'au bout. On cite toujours nos sources â et si on ne sait pas, on le dit.</p>
-    <p>On couvre 7 grandes catÃ©gories : <strong>Monde, Gossip, Tech, Sport, Culture, Science</strong> et <strong>WTF</strong>. La derniÃ¨re mÃ©rite d'Ãªtre prise au sÃ©rieux â l'insolite dit souvent autant sur notre Ã©poque que les grandes crises.</p>
-
-    
-      
-      
-    </div>
-
-    <h2>Nos valeurs</h2>
-    <ul>
-      <li><strong>Transparence</strong> â on cite nos sources, on distingue info et opinion</li>
-      <li><strong>AccessibilitÃ©</strong> â l'actu pour tout le monde, pas que pour les initiÃ©s</li>
-      <li><strong>IndÃ©pendance</strong> â SPILL n'appartient Ã  aucun groupe de presse, aucun parti</li>
-      <li><strong>RapiditÃ©</strong> â on est lÃ  quand Ã§a se passe, pas le lendemain</li>
-      <li><strong>DiversitÃ© des sujets</strong> â la culture compte autant que la politique</li>
-    </ul>
-
-    
-      <div style="background:var(--ink);border-radius:5px;padding:1.2rem;text-align:center">
-        <div style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--red);letter-spacing:2px">7</div>
-        <div style="font-size:.75rem;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase">CatÃ©gories</div>
-      </div>
-      <div style="background:var(--ink);border-radius:5px;padding:1.2rem;text-align:center">
-        <div style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--red);letter-spacing:2px">100%</div>
-        <div style="font-size:.75rem;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase">IndÃ©pendant</div>
-      </div>
-    </div>
+<div class="page-wrap" style="grid-template-columns:1fr;max-width:800px">
+  <div style="padding:2rem 0">
+    <h1 style="font-family:var(--font-display);font-size:2.5rem;font-weight:800;margin-bottom:1rem">À propos</h1>
+    <p style="color:var(--muted);font-size:1rem;line-height:1.8">SPILL — L'actualité sans filtre. Monde, gossip, tech, sport, culture, science, WTF.</p>
   </div>
 </div>
-
 <footer>
   <div class="foot-inner">
-    <div class="foot-logo">SPILL<em>L'actu de partout, sur tout Â· 2026</em></div>
+    <div class="foot-logo">SPILL<em>L'actu de partout, sur tout · 2026</em></div>
     <div class="foot-links">
-      <a href="a-propos.html">Ã propos</a><a href="contact.html">Contact</a><a href="mentions-legales.html">Mentions lÃ©gales</a><a href="newsletter.html">Newsletter</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="newsletter.html">Newsletter</a>
     </div>
-    <div class="foot-copy">Â© SPILL 2026</div>
+    <div class="foot-copy">© SPILL 2026</div>
   </div>
 </footer>
-
-</body></html>
+<script>
+const d = new Date();
+const el = document.getElementById('dateStr');
+if(el) el.textContent = d.toLocaleDateString('fr-FR',{weekday:'long',year:'numeric',month:'long',day:'numeric'}).replace(/^\w/,x=>x.toUpperCase());
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var navEl = document.getElementById('nav-home');
+  if(navEl) navEl.classList.add('active');
+  var catEl = document.getElementById('catbtn-home');
+  if(catEl) catEl.classList.add('active');
+});
+</script>
+</body>
+</html>
